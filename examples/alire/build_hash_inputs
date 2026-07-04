@@ -1,0 +1,5 @@
+dependency:templates=0.1.0-dev=a434532ac8d4a661551d6de2bf460fe8d9cece2b8b8c68f739c0cffe5601c03c
+external:LIBRARY_TYPE=default
+external:TEMPLATES_EXAMPLES_LIBRARY_TYPE=default
+profile:templates_examples=DEVELOPMENT
+switches:templates_examples=-Og,-fdata-sections,-ffunction-sections,-g,-gnatVa,-gnatW8,-gnatw.X,-gnatwa,-gnaty-d,-gnaty3,-gnatyA,-gnatyB,-gnatyI,-gnatyO,-gnatyS,-gnatya,-gnatyb,-gnatyc,-gnatye,-gnatyf,-gnatyh,-gnatyi,-gnatyk,-gnatyl,-gnatym,-gnatyn,-gnatyp,-gnatyr,-gnatyt,-gnatyu,-gnatyx

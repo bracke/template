@@ -1,0 +1,1 @@
+templates_public_tests.adb:34:07: warning: variable "T" is assigned but never read [-gnatwm]

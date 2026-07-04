@@ -1,0 +1,19 @@
+name = "templates_examples"
+description = "Examples for the templates crate"
+version = "0.1.0-dev"
+
+authors = ["Bent Bracke"]
+maintainers = ["Bent Bracke <bent@example.com>"]
+maintainers-logins = ["bbracke"]
+
+licenses = "MIT OR Apache-2.0"
+website = ""
+tags = ["templates", "examples"]
+
+project-files = ["templates_examples.gpr"]
+
+[[depends-on]]
+templates = "*"
+
+[[pins]]
+templates = { path = ".." }

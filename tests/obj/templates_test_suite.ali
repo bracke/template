@@ -1,0 +1,124 @@
+V "GNAT Lib v15"
+A -gnatA
+A -gnat2022
+A -gnata
+A -gnatwa
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U templates_test_suite%b  templates_test_suite.adb  859bd72e NE OO PK
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W templates_diagnostics_tests%s  templates_diagnostics_tests.adb  templates_diagnostics_tests.ali
+W templates_html_tests%s  templates_html_tests.adb  templates_html_tests.ali
+W templates_parser_tests%s  templates_parser_tests.adb  templates_parser_tests.ali
+W templates_public_tests%s  templates_public_tests.adb  templates_public_tests.ali
+W templates_renderer_tests%s  templates_renderer_tests.adb  templates_renderer_tests.ali
+W templates_values_tests%s  templates_values_tests.adb  templates_values_tests.ali
+
+U templates_test_suite%s  templates_test_suite.ads  97313181 EE NE OO PK
+W aunit%s		aunit.adb		aunit.ali
+W aunit.test_suites%s	aunit-test_suites.adb	aunit-test_suites.ali
+
+D ada.ads		20250808065140 76789da1 ada%s
+D a-calend.ads		20250808065140 bf7f3cc9 ada.calendar%s
+D a-except.ads		20250808065140 e7970cd9 ada.exceptions%s
+D a-finali.ads		20250808065140 bf4f806b ada.finalization%s
+D a-inteio.ads		20250808065140 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20250808065140 40018c65 ada.io_exceptions%s
+D a-stream.ads		20250808065140 17477cbd ada.streams%s
+D a-string.ads		20250808065140 90ac6797 ada.strings%s
+D a-sttebu.ads		20250808065140 f1ad67a2 ada.strings.text_buffers%s
+D a-stuten.ads		20250808065140 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20250808065140 fbca0ad5 ada.tags%s
+D a-textio.ads		20250808065140 34ef47de ada.text_io%s
+D a-tiinio.ads		20250808065140 76699c8f ada.text_io.integer_io%s
+D a-unccon.ads		20250808065140 0e9b276f ada.unchecked_conversion%s
+D ada_containers.ads	20260120181012 11329e00 ada_containers%s
+D ada_containers-aunit_lists.ads  20260120181012 d9ebc89a ada_containers.aunit_lists%s
+D aunit.ads		20260120181012 76cdf7c6 aunit%s
+D aunit-assertions.ads	20260120181012 b7f9ecd6 aunit.assertions%s
+D aunit-io.ads		20260120181012 fb5ed18b aunit.io%s
+D aunit-options.ads	20260120181012 6e5a02a6 aunit.options%s
+D aunit-simple_test_cases.ads  20260120181012 4111c32f aunit.simple_test_cases%s
+D aunit-test_filters.ads  20260120181012 f10b2127 aunit.test_filters%s
+D aunit-test_fixtures.ads  20260120181012 faadeab5 aunit.test_fixtures%s
+D aunit-test_results.ads  20260120181012 b44de7dc aunit.test_results%s
+D aunit-test_suites.ads	20260120181012 6821dc24 aunit.test_suites%s
+D aunit-tests.ads	20260120181012 1da11d49 aunit.tests%s
+D aunit-time_measure.ads  20260120181012 d9c247b0 aunit.time_measure%s
+D gnat.ads		20250808065140 b5988c27 gnat%s
+D g-souinf.ads		20250808065140 470146ee gnat.source_info%s
+D interfac.ads		20250808065140 9111f9c1 interfaces%s
+D i-c.ads		20250808065140 e94c966a interfaces.c%s
+D i-cstrea.ads		20250808065140 ffd01b9d interfaces.c_streams%s
+D system.ads		20250808065140 14286b0f system%s
+D s-crtl.ads		20250808065140 beb39b9e system.crtl%s
+D s-exctab.ads		20250808065140 91bef6ef system.exception_table%s
+D s-ficobl.ads		20250808065140 dc5161d4 system.file_control_block%s
+D s-finpri.ads		20250808065140 5970d55a system.finalization_primitives%s
+D s-finroo.ads		20250808065140 0a7c3ed4 system.finalization_root%s
+D s-oscons.ads		20250827122531 068e1a91 system.os_constants%s
+D s-oslock.ads		20250808065140 13fa6b78 system.os_locks%s
+D s-parame.ads		20250808065140 3597fc11 system.parameters%s
+D s-pooglo.ads		20250808065140 91708d21 system.pool_global%s
+D s-putima.ads		20250808065140 17291fe4 system.put_images%s
+D s-secsta.ads		20250808065140 578279f5 system.secondary_stack%s
+D s-soflin.ads		20250808065140 5d88fdea system.soft_links%s
+D s-stache.ads		20250808065140 0b81c1fe system.stack_checking%s
+D s-stalib.ads		20250808065140 1c9580f6 system.standard_library%s
+D s-stoele.ads		20250808065140 ccded4e8 system.storage_elements%s
+D s-stopoo.ads		20250808065140 e9fa2dd8 system.storage_pools%s
+D s-traent.ads		20250808065140 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20250808065140 fa2a7f59 system.unsigned_types%s
+D s-wchcon.ads		20250808065140 d9032363 system.wch_con%s
+D templates_diagnostics_tests.ads  20260704134330 12c1a602 templates_diagnostics_tests%s
+D templates_html_tests.ads  20260704134330 ebde6439 templates_html_tests%s
+D templates_parser_tests.ads  20260704134330 5c9a5b20 templates_parser_tests%s
+D templates_public_tests.ads  20260704134331 a78a6e77 templates_public_tests%s
+D templates_renderer_tests.ads  20260704134330 478c356c templates_renderer_tests%s
+D templates_test_suite.ads  20260704134330 ff10eda5 templates_test_suite%s
+D templates_test_suite.adb  20260704134134 daec0ae8 templates_test_suite%b
+D templates_values_tests.ads  20260704134330 e5e4f263 templates_values_tests%s
+G a e
+G c Z s b [suite templates_test_suite 7 13 none]
+G r c none [suite templates_test_suite 7 13 none] [new_suite aunit__test_suites 58 13 none]
+G r c none [suite templates_test_suite 7 13 none] [add_tests templates_values_tests 10 14 none]
+G r c none [suite templates_test_suite 7 13 none] [add_tests templates_html_tests 10 14 none]
+G r c none [suite templates_test_suite 7 13 none] [add_tests templates_diagnostics_tests 10 14 none]
+G r c none [suite templates_test_suite 7 13 none] [add_tests templates_parser_tests 10 14 none]
+G r c none [suite templates_test_suite 7 13 none] [add_tests templates_renderer_tests 10 14 none]
+G r c none [suite templates_test_suite 7 13 none] [add_tests templates_public_tests 10 14 none]
+X 17 aunit.ads
+34K9*AUnit 48e10 58|1r6 7r26 59|10r26 11r25 12r9
+X 25 aunit-test_suites.ads
+41K15*Test_Suites 86e22 58|1w12 7r32 59|10r32 11r31 12r15
+44P9*Access_Test_Suite(43R9) 58|7r44 59|10r44 11r43
+58V13*New_Suite{44P9} 59|12s27
+X 53 templates_diagnostics_tests.ads
+4K9*Templates_Diagnostics_Tests 20e32 59|1w6 16r7
+10U14*Add_Tests 59|16s35
+X 54 templates_html_tests.ads
+4K9*Templates_Html_Tests 16e25 59|2w6 15r7
+10U14*Add_Tests 59|15s28
+X 55 templates_parser_tests.ads
+4K9*Templates_Parser_Tests 28e27 59|3w6 17r7
+10U14*Add_Tests 59|17s30
+X 56 templates_public_tests.ads
+4K9*Templates_Public_Tests 20e27 59|4w6 19r7
+10U14*Add_Tests 59|19s30
+X 57 templates_renderer_tests.ads
+4K9*Templates_Renderer_Tests 28e29 59|5w6 18r7
+10U14*Add_Tests 59|18s32
+X 58 templates_test_suite.ads
+3K9*Templates_Test_Suite 9l5 9e25 59|8b14 23l5 23t25
+7V13*Suite{25|44P9} 59|10b13 21l8 21t13
+X 59 templates_test_suite.adb
+11p7 Result{25|44P9} 14r41 15r39 16r46 17r41 18r43 19r41 20r14
+X 60 templates_values_tests.ads
+4K9*Templates_Values_Tests 59|6w6 14r7 60|28e27
+10U14*Add_Tests 59|14s30
+

@@ -1,0 +1,226 @@
+V "GNAT Lib v15"
+A -gnatA
+A -gnat2022
+A -gnata
+A -gnatwa
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+
+RN
+RV NO_ACCESS_SUBPROGRAMS
+RV NO_ALLOCATORS
+RV NO_DISPATCH
+RV NO_DISPATCHING_CALLS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_LOCAL_ALLOCATORS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+
+U templates_diagnostics_tests%b  templates_diagnostics_tests.adb  5e3c0aed OO PF PK
+W ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z ada.unchecked_conversion%s
+W aunit%s		aunit.adb		aunit.ali
+W aunit.assertions%s	aunit-assertions.adb	aunit-assertions.ali
+W aunit.memory%s	aunit-memory.adb	aunit-memory.ali
+Z aunit.memory.utils%s	aunit-memory-utils.adb	aunit-memory-utils.ali  ED
+Z aunit.simple_test_cases%s  aunit-simple_test_cases.adb  aunit-simple_test_cases.ali
+W aunit.test_caller%s	aunit-test_caller.adb	aunit-test_caller.ali  ED
+Z aunit.test_fixtures%s	aunit-test_fixtures.adb	aunit-test_fixtures.ali
+Z system%s		system.ads		system.ali
+Z system.finalization_primitives%s  s-finpri.adb  s-finpri.ali
+Z system.pool_global%s	s-pooglo.adb		s-pooglo.ali
+Z system.put_images%s	s-putima.adb		s-putima.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+W templates%s		templates.adb		templates.ali
+W templates.diagnostics%s  templates-diagnostics.adb  templates-diagnostics.ali
+
+U templates_diagnostics_tests%s  templates_diagnostics_tests.ads  804d9093 EE OO PF PK
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W aunit%s		aunit.adb		aunit.ali
+W aunit.test_fixtures%s	aunit-test_fixtures.adb	aunit-test_fixtures.ali
+W aunit.test_suites%s	aunit-test_suites.adb	aunit-test_suites.ali
+Z system%s		system.ads		system.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+
+D ada.ads		20250808065140 76789da1 ada%s
+D a-calend.ads		20250808065140 bf7f3cc9 ada.calendar%s
+D a-charac.ads		20250808065140 2d3ec45b ada.characters%s
+D a-chlat1.ads		20250808065140 e0d72e76 ada.characters.latin_1%s
+D a-contai.ads		20250808065140 61e5e089 ada.containers%s
+D a-conhel.ads		20250808065140 46fe1ce3 ada.containers.helpers%s
+D a-convec.ads		20250808065140 91fb49f3 ada.containers.vectors%s
+D a-except.ads		20250808065140 e7970cd9 ada.exceptions%s
+D a-finali.ads		20250808065140 bf4f806b ada.finalization%s
+D a-inteio.ads		20250808065140 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20250808065140 40018c65 ada.io_exceptions%s
+D a-iteint.ads		20250808065140 49a8bee2 ada.iterator_interfaces%s
+D a-stream.ads		20250808065140 17477cbd ada.streams%s
+D a-string.ads		20250808065140 90ac6797 ada.strings%s
+D a-strmap.ads		20250808065140 1f91ebb6 ada.strings.maps%s
+D a-strsea.ads		20250808065140 18c3c634 ada.strings.search%s
+D a-sttebu.ads		20250808065140 f1ad67a2 ada.strings.text_buffers%s
+D a-strunb.ads		20250808065140 b10770ab ada.strings.unbounded%s
+D a-stuten.ads		20250808065140 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20250808065140 fbca0ad5 ada.tags%s
+D a-textio.ads		20250808065140 34ef47de ada.text_io%s
+D a-tiinio.ads		20250808065140 76699c8f ada.text_io.integer_io%s
+D a-unccon.ads		20250808065140 0e9b276f ada.unchecked_conversion%s
+D ada_containers.ads	20260120181012 11329e00 ada_containers%s
+D ada_containers-aunit_lists.ads  20260120181012 d9ebc89a ada_containers.aunit_lists%s
+D aunit.ads		20260120181012 76cdf7c6 aunit%s
+D aunit-assertions.ads	20260120181012 b7f9ecd6 aunit.assertions%s
+D aunit-io.ads		20260120181012 fb5ed18b aunit.io%s
+D aunit-memory.ads	20260120181012 a0315146 aunit.memory%s
+D aunit-memory-utils.ads  20260120181012 5b1e3d11 aunit.memory.utils%s
+D aunit-memory-utils.adb  20260120181012 c00242e3 aunit.memory.utils%b
+D aunit-options.ads	20260120181012 6e5a02a6 aunit.options%s
+D aunit-simple_test_cases.ads  20260120181012 4111c32f aunit.simple_test_cases%s
+D aunit-test_caller.ads	20260120181012 956cfce4 aunit.test_caller%s
+D aunit-test_caller.adb	20260120181012 0f783ccd aunit.test_caller%b
+D aunit-test_filters.ads  20260120181012 f10b2127 aunit.test_filters%s
+D aunit-test_fixtures.ads  20260120181012 faadeab5 aunit.test_fixtures%s
+D aunit-test_results.ads  20260120181012 b44de7dc aunit.test_results%s
+D aunit-test_suites.ads	20260120181012 6821dc24 aunit.test_suites%s
+D aunit-tests.ads	20260120181012 1da11d49 aunit.tests%s
+D aunit-time_measure.ads  20260120181012 d9c247b0 aunit.time_measure%s
+D gnat.ads		20250808065140 b5988c27 gnat%s
+D g-souinf.ads		20250808065140 470146ee gnat.source_info%s
+D interfac.ads		20250808065140 9111f9c1 interfaces%s
+D i-c.ads		20250808065140 e94c966a interfaces.c%s
+D i-cstrea.ads		20250808065140 ffd01b9d interfaces.c_streams%s
+D system.ads		20250808065140 14286b0f system%s
+D s-atocou.ads		20250808065140 dc18efc3 system.atomic_counters%s
+D s-crtl.ads		20250808065140 beb39b9e system.crtl%s
+D s-exctab.ads		20250808065140 91bef6ef system.exception_table%s
+D s-ficobl.ads		20250808065140 dc5161d4 system.file_control_block%s
+D s-finpri.ads		20250808065140 5970d55a system.finalization_primitives%s
+D s-finroo.ads		20250808065140 0a7c3ed4 system.finalization_root%s
+D s-oscons.ads		20250827122531 068e1a91 system.os_constants%s
+D s-oslock.ads		20250808065140 13fa6b78 system.os_locks%s
+D s-parame.ads		20250808065140 3597fc11 system.parameters%s
+D s-pooglo.ads		20250808065140 91708d21 system.pool_global%s
+D s-putima.ads		20250808065140 17291fe4 system.put_images%s
+D s-retsta.ads		20250808065140 0f6b06cb system.return_stack%s
+D s-secsta.ads		20250808065140 578279f5 system.secondary_stack%s
+D s-soflin.ads		20250808065140 5d88fdea system.soft_links%s
+D s-stache.ads		20250808065140 0b81c1fe system.stack_checking%s
+D s-stalib.ads		20250808065140 1c9580f6 system.standard_library%s
+D s-stoele.ads		20250808065140 ccded4e8 system.storage_elements%s
+D s-stopoo.ads		20250808065140 e9fa2dd8 system.storage_pools%s
+D s-stratt.ads		20250808065140 516607ae system.stream_attributes%s
+D s-traent.ads		20250808065140 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20250808065140 fa2a7f59 system.unsigned_types%s
+D s-wchcon.ads		20250808065140 d9032363 system.wch_con%s
+D templates.ads		20260704133540 8d75865f templates%s
+D templates-diagnostics.ads  20260704133127 6f948079 templates.diagnostics%s
+D templates_diagnostics_tests.ads  20260704134330 12c1a602 templates_diagnostics_tests%s
+D templates_diagnostics_tests.adb  20260704133910 6b1eb622 templates_diagnostics_tests%b
+G a e
+G c b b b [b templates_diagnostics_tests 7 1 none]
+G c Z s b [add_tests templates_diagnostics_tests 10 14 none]
+G c Z s b [test_message templates_diagnostics_tests 14 14 none]
+G c Z s b [test_raise_error templates_diagnostics_tests 18 14 none]
+G c Z s s [fixtureDF templates_diagnostics_tests 6 9 none]
+G c Z s s [fixtureIP templates_diagnostics_tests 6 9 none]
+G c Z b b [create templates_diagnostics_tests__caller 85 13 9_4]
+G c Z b b [create templates_diagnostics_tests__caller 91 14 9_4]
+G c Z b b [name templates_diagnostics_tests__caller 98 13 9_4]
+G c Z b b [run_test templates_diagnostics_tests__caller 101 14 9_4]
+G c Z b b [set_up templates_diagnostics_tests__caller 104 14 9_4]
+G c Z b b [tear_down templates_diagnostics_tests__caller 107 14 9_4]
+G c Z b b [test_caseDF templates_diagnostics_tests__caller 115 9 9_4]
+G c Z b b [test_caseIP templates_diagnostics_tests__caller 115 9 9_4]
+G c Z b b [new_fixtureR templates_diagnostics_tests__caller__new_fixtureGP2498 38 13 9_4]
+G c Z b b [new_fixture templates_diagnostics_tests__caller 38 13 9_4]
+G r i none [b templates_diagnostics_tests 7 1 none] [gen_alloc aunit__memory__utils 40 13 none]
+G r s test_fixture [b templates_diagnostics_tests 7 1 none] [test_fixtureIP aunit__test_fixtures 88 9 none]
+G r i none [b templates_diagnostics_tests 7 1 none] [test_caller aunit 78 15 none]
+G r i none [add_tests templates_diagnostics_tests 10 14 none] [gen_alloc aunit__memory__utils 40 13 none]
+G r s test_case [add_tests templates_diagnostics_tests 10 14 none] [test_caseIP aunit__simple_test_cases 75 9 none]
+G r c none [add_tests templates_diagnostics_tests 10 14 none] [format aunit 44 13 none]
+G r c none [add_tests templates_diagnostics_tests 10 14 none] [add_test aunit__test_suites 48 14 none]
+G r c none [test_message templates_diagnostics_tests 14 14 none] [message templates__diagnostics 8 13 none]
+G r c none [test_message templates_diagnostics_tests 14 14 none] [assert aunit__assertions 48 14 none]
+G r c none [test_raise_error templates_diagnostics_tests 18 14 none] [raise_error templates__diagnostics 18 14 none]
+G r c none [test_raise_error templates_diagnostics_tests 18 14 none] [assert aunit__assertions 48 14 none]
+G r s test_fixture [fixtureIP templates_diagnostics_tests 6 9 none] [test_fixtureIP aunit__test_fixtures 88 9 none]
+G r i none [create templates_diagnostics_tests__caller 85 13 9_4] [gen_alloc aunit__memory__utils 40 13 none]
+G r s test_case [create templates_diagnostics_tests__caller 85 13 9_4] [test_caseIP aunit__simple_test_cases 75 9 none]
+G r c none [create templates_diagnostics_tests__caller 85 13 9_4] [format aunit 44 13 none]
+G r c none [create templates_diagnostics_tests__caller 91 14 9_4] [format aunit 44 13 none]
+G r c none [run_test templates_diagnostics_tests__caller 101 14 9_4] [copy_id aunit__assertions 125 14 none]
+G r c none [set_up templates_diagnostics_tests__caller 104 14 9_4] [set_up aunit__test_fixtures 80 14 none]
+G r c none [tear_down templates_diagnostics_tests__caller 107 14 9_4] [tear_down aunit__test_fixtures 83 14 none]
+G r s test_case [test_caseIP templates_diagnostics_tests__caller 115 9 9_4] [test_caseIP aunit__simple_test_cases 75 9 none]
+G r s test_fixture [new_fixtureR templates_diagnostics_tests__caller__new_fixtureGP2498 38 13 9_4] [test_fixtureIP aunit__test_fixtures 88 9 none]
+X 1 ada.ads
+18K9*Ada 22e8 73|1r6 37r13
+X 8 a-except.ads
+44K13*Exceptions 309e19 73|1w10 37r17
+84V13*Exception_Message{string} 73|37s28
+X 12 a-iteint.ads
+24h9 Forward_Iterator
+32h9 Reversible_Iterator<24R9[7|119]>
+X 25 ada_containers-aunit_lists.ads
+53R9*Cursor
+X 26 aunit.ads
+34K9*AUnit 48e10 72|1r6 2r6 6r24 10r33 73|2r6 3r6 9r26 10r8 12r33 14r7 16r7
+X 27 aunit-assertions.ads
+44K15*Assertions 155e21 73|2w12 10r14
+48U14*Assert 73|23s7 33s7 36s10
+101U14*Init_Test
+104U14*Clear_Failures
+107V13*Has_Failures{boolean}
+110R9*Failure_Iter<25|53R9[145]>
+113V13*First_Failure{110R9}
+X 34 aunit-test_caller.ads
+78k15*Test_Caller 121e22 73|3w12 9r32
+80R9*Test_Case<33|44R9>
+81P9*Test_Case_Access(80R9[73|9])
+85V13*Create{81P9[73|9]} 73|15s24[9] 17s24[9]
+112P9 Fixture_Access(72|6R9)
+X 35 aunit-test_caller.adb
+38V13 New_Fixture[30|40]{34|112P9[73|9]} 31|38b13[73|9]
+66P12 Access_Type(34|80R9[73|9])
+67V16 Alloc[30|40]{66P12[73|9]} 31|38b13[73|9]
+X 37 aunit-test_fixtures.ads
+76K15*Test_Fixtures 90e24 72|1w12 6r30
+78R9*Test_Fixture<27|96R9> 88e67 72|6r44
+80U14*Set_Up
+83U14*Tear_Down
+X 39 aunit-test_suites.ads
+41K15*Test_Suites 86e22 72|2w12 10r39 73|12r39 14r13 16r13
+44P9*Access_Test_Suite(43R9) 72|10r51 73|12r51
+48U14*Add_Test 73|14s25 16s25
+X 70 templates.ads
+6K9*Templates 88e14 73|4w6 5r6 24r10 32r7 35r20
+8X4*Template_Error 73|35r30
+X 71 templates-diagnostics.ads
+1K19*Diagnostics 23e26 73|5w16 24r20 32r17
+8V13*Message{string} 73|24s32
+18U14*Raise_Error 73|32s29
+X 72 templates_diagnostics_tests.ads
+4K9*Templates_Diagnostics_Tests 20l5 20e32 73|7b14 42l5 42t32
+6R9*Fixture<37|78R9> 27|101p14 104p14 107p13 113p13 37|80p14 83p14 72|6e73
+. 14p14 14r42 18p14 18r46 73|9r45 20r42 29r46
+10U14*Add_Tests 10>25 73|12b14 18l8 18t17
+10p25 Suite{39|44P9} 73|12b25 15r10 17r10
+14U14*Test_Message 14=28 73|15r54 20b14 27l8 27t20
+14r28 Item{6R9} 73|20b28 21r28
+18U14*Test_Raise_Error 18=32 73|17r52 29b14 40l8 40t24
+18r32 Item{6R9} 73|29b32 30r28
+X 73 templates_diagnostics_tests.adb
+9K12 Caller[34|78] 15r17 17r17
+35r12 Error{8|53R9} 37r47
+

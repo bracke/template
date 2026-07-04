@@ -1,0 +1,437 @@
+V "GNAT Lib v15"
+A -gnatA
+A -gnat2022
+A -gnata
+A -gnatwa
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+
+RN
+RV NO_ACCESS_SUBPROGRAMS
+RV NO_ALLOCATORS
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_DISPATCH
+RV NO_DISPATCHING_CALLS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_FINALIZATION
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LOCAL_ALLOCATORS
+RV NO_NESTED_FINALIZATION
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_STREAMS
+RV NO_UNCHECKED_ACCESS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_ALIASING
+RV NO_IMPLICIT_LOOPS
+RV NO_ELABORATION_CODE
+RV NO_OBSOLESCENT_FEATURES
+
+U templates.parser%b	templates-parser.adb	80a70283 OO PF PK
+W ada%s			ada.ads			ada.ali
+W ada.containers%s	a-contai.ads		a-contai.ali
+Z ada.containers.generic_array_sort%s
+Z ada.containers.helpers%s  a-conhel.adb	a-conhel.ali
+W ada.containers.vectors%s
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.finalization%s	a-finali.ads		a-finali.ali
+Z ada.iterator_interfaces%s
+Z ada.streams%s		a-stream.adb		a-stream.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.fixed%s	a-strfix.adb		a-strfix.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z ada.unchecked_deallocation%s
+Z system%s		system.ads		system.ali
+Z system.assertions%s	s-assert.adb		s-assert.ali
+Z system.concat_3%s	s-conca3.adb		s-conca3.ali
+Z system.concat_4%s	s-conca4.adb		s-conca4.ali
+Z system.finalization_primitives%s  s-finpri.adb  s-finpri.ali
+Z system.put_images%s	s-putima.adb		s-putima.ali
+Z system.return_stack%s	s-retsta.ads		s-retsta.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.storage_elements%s  s-stoele.ads	s-stoele.ali
+Z system.storage_pools%s  s-stopoo.adb		s-stopoo.ali
+Z system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
+Z system.stream_attributes%s  s-stratt.adb	s-stratt.ali
+W templates%s		templates.adb		templates.ali
+W templates.diagnostics%s  templates-diagnostics.adb  templates-diagnostics.ali
+
+U templates.parser%s	templates-parser.ads	a9c362b7 EE NE OO PK
+W templates%s		templates.adb		templates.ali
+W templates.ast%s	templates-ast.adb	templates-ast.ali
+
+D ada.ads		20250808065140 76789da1 ada%s
+D a-assert.ads		20250808065140 ba465f5c ada.assertions%s
+D a-charac.ads		20250808065140 2d3ec45b ada.characters%s
+D a-chlat1.ads		20250808065140 e0d72e76 ada.characters.latin_1%s
+D a-contai.ads		20250808065140 61e5e089 ada.containers%s
+D a-cgarso.ads		20250808065140 9129bfa8 ada.containers.generic_array_sort%s
+D a-conhel.ads		20250808065140 46fe1ce3 ada.containers.helpers%s
+D a-conhel.adb		20250808065140 854d323e ada.containers.helpers%b
+D a-convec.ads		20250808065140 91fb49f3 ada.containers.vectors%s
+D a-convec.adb		20250808065140 b2ed0168 ada.containers.vectors%b
+D a-except.ads		20250808065140 e7970cd9 ada.exceptions%s
+D a-finali.ads		20250808065140 bf4f806b ada.finalization%s
+D a-iteint.ads		20250808065140 49a8bee2 ada.iterator_interfaces%s
+D a-stream.ads		20250808065140 17477cbd ada.streams%s
+D a-string.ads		20250808065140 90ac6797 ada.strings%s
+D a-strfix.ads		20250808065140 8648dedb ada.strings.fixed%s
+D a-strmap.ads		20250808065140 1f91ebb6 ada.strings.maps%s
+D a-strsea.ads		20250808065140 18c3c634 ada.strings.search%s
+D a-sttebu.ads		20250808065140 f1ad67a2 ada.strings.text_buffers%s
+D a-strunb.ads		20250808065140 b10770ab ada.strings.unbounded%s
+D a-stuten.ads		20250808065140 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20250808065140 fbca0ad5 ada.tags%s
+D a-unccon.ads		20250808065140 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20250808065140 c3a8ac65 ada.unchecked_deallocation%s
+D interfac.ads		20250808065140 9111f9c1 interfaces%s
+D i-c.ads		20250808065140 e94c966a interfaces.c%s
+D system.ads		20250808065140 14286b0f system%s
+D s-assert.ads		20250808065140 9c4520c7 system.assertions%s
+D s-atocou.ads		20250808065140 dc18efc3 system.atomic_counters%s
+D s-atocou.adb		20250808065140 6fe685de system.atomic_counters%b
+D s-atopri.ads		20250808065140 e19c1d89 system.atomic_primitives%s
+D s-conca3.ads		20250808065140 8a7a19a2 system.concat_3%s
+D s-conca4.ads		20250808065140 33f85f3e system.concat_4%s
+D s-exctab.ads		20250808065140 91bef6ef system.exception_table%s
+D s-finpri.ads		20250808065140 5970d55a system.finalization_primitives%s
+D s-finroo.ads		20250808065140 0a7c3ed4 system.finalization_root%s
+D s-memory.ads		20250808065140 18949c1a system.memory%s
+D s-oscons.ads		20250827122531 068e1a91 system.os_constants%s
+D s-oslock.ads		20250808065140 13fa6b78 system.os_locks%s
+D s-parame.ads		20250808065140 3597fc11 system.parameters%s
+D s-pooglo.ads		20250808065140 91708d21 system.pool_global%s
+D s-putima.ads		20250808065140 17291fe4 system.put_images%s
+D s-retsta.ads		20250808065140 0f6b06cb system.return_stack%s
+D s-secsta.ads		20250808065140 578279f5 system.secondary_stack%s
+D s-soflin.ads		20250808065140 5d88fdea system.soft_links%s
+D s-stache.ads		20250808065140 0b81c1fe system.stack_checking%s
+D s-stalib.ads		20250808065140 1c9580f6 system.standard_library%s
+D s-stalib.adb		20250808065140 eb464a47 system.standard_library%b
+D s-stoele.ads		20250808065140 ccded4e8 system.storage_elements%s
+D s-stopoo.ads		20250808065140 e9fa2dd8 system.storage_pools%s
+D s-stposu.ads		20250808065140 e0b9fefd system.storage_pools.subpools%s
+D s-stratt.ads		20250808065140 516607ae system.stream_attributes%s
+D s-traent.ads		20250808065140 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20250808065140 fa2a7f59 system.unsigned_types%s
+D templates.ads		20260704133540 8d75865f templates%s
+D templates-ast.ads	20260704134133 056c8389 templates.ast%s
+D templates-diagnostics.ads  20260704133127 6f948079 templates.diagnostics%s
+D templates-parser.ads	20260704133127 21da6761 templates.parser%s
+D templates-parser.adb	20260704134111 d95a72b3 templates.parser%b
+G a e
+G c Z s b [parse templates__parser 8 13 none]
+G c Z b b [has_element templates__parser__node_stack 115 13 11_4]
+G c Z b b [empty templates__parser__node_stack 125 13 11_4]
+G c Z b b [Oeq templates__parser__node_stack 127 24 11_4]
+G c Z b b [to_vector templates__parser__node_stack 136 13 11_4]
+G c Z b b [to_vector templates__parser__node_stack 139 13 11_4]
+G c Z b b [Oconcat templates__parser__node_stack 145 13 11_4]
+G c Z b b [Oconcat templates__parser__node_stack 149 13 11_4]
+G c Z b b [Oconcat templates__parser__node_stack 153 13 11_4]
+G c Z b b [Oconcat templates__parser__node_stack 157 13 11_4]
+G c Z b b [capacity templates__parser__node_stack 161 13 11_4]
+G c Z b b [reserve_capacity templates__parser__node_stack 164 14 11_4]
+G c Z b b [length templates__parser__node_stack 175 13 11_4]
+G c Z b b [set_length templates__parser__node_stack 178 14 11_4]
+G c Z b b [is_empty templates__parser__node_stack 187 13 11_4]
+G c Z b b [clear templates__parser__node_stack 190 14 11_4]
+G c Z b b [to_cursor templates__parser__node_stack 194 13 11_4]
+G c Z b b [to_index templates__parser__node_stack 201 13 11_4]
+G c Z b b [element templates__parser__node_stack 206 13 11_4]
+G c Z b b [element templates__parser__node_stack 213 13 11_4]
+G c Z b b [replace_element templates__parser__node_stack 217 14 11_4]
+G c Z b b [replace_element templates__parser__node_stack 228 14 11_4]
+G c Z b b [query_element templates__parser__node_stack 239 14 11_4]
+G c Z b b [query_element templates__parser__node_stack 250 14 11_4]
+G c Z b b [update_element templates__parser__node_stack 259 14 11_4]
+G c Z b b [update_element templates__parser__node_stack 276 14 11_4]
+G c Z b b [constant_reference templates__parser__node_stack 303 13 11_4]
+G c Z b b [reference templates__parser__node_stack 308 13 11_4]
+G c Z b b [constant_reference templates__parser__node_stack 313 13 11_4]
+G c Z b b [reference templates__parser__node_stack 318 13 11_4]
+G c Z b b [assign templates__parser__node_stack 323 14 11_4]
+G c Z b b [copy templates__parser__node_stack 325 13 11_4]
+G c Z b b [move templates__parser__node_stack 327 14 11_4]
+G c Z b b [new_vector templates__parser__node_stack 333 13 11_4]
+G c Z b b [insert_vector templates__parser__node_stack 337 14 11_4]
+G c Z b b [insert_vector templates__parser__node_stack 361 14 11_4]
+G c Z b b [insert_vector templates__parser__node_stack 378 14 11_4]
+G c Z b b [insert templates__parser__node_stack 396 14 11_4]
+G c Z b b [insert templates__parser__node_stack 404 14 11_4]
+G c Z b b [insert templates__parser__node_stack 412 14 11_4]
+G c Z b b [insert templates__parser__node_stack 421 14 11_4]
+G c Z b b [insert templates__parser__node_stack 438 14 11_4]
+G c Z b b [prepend_vector templates__parser__node_stack 449 14 11_4]
+G c Z b b [prepend templates__parser__node_stack 459 14 11_4]
+G c Z b b [append_vector templates__parser__node_stack 466 14 11_4]
+G c Z b b [append templates__parser__node_stack 476 14 11_4]
+G c Z b b [append templates__parser__node_stack 483 14 11_4]
+G c Z b b [insert_space templates__parser__node_stack 486 14 11_4]
+G c Z b b [insert_space templates__parser__node_stack 503 14 11_4]
+G c Z b b [delete templates__parser__node_stack 514 14 11_4]
+G c Z b b [delete templates__parser__node_stack 524 14 11_4]
+G c Z b b [delete_first templates__parser__node_stack 533 14 11_4]
+G c Z b b [delete_last templates__parser__node_stack 538 14 11_4]
+G c Z b b [reverse_elements templates__parser__node_stack 546 14 11_4]
+G c Z b b [swap templates__parser__node_stack 549 14 11_4]
+G c Z b b [swap templates__parser__node_stack 554 14 11_4]
+G c Z b b [first_index templates__parser__node_stack 560 13 11_4]
+G c Z b b [first templates__parser__node_stack 563 13 11_4]
+G c Z b b [first_element templates__parser__node_stack 567 13 11_4]
+G c Z b b [last_index templates__parser__node_stack 570 13 11_4]
+G c Z b b [last templates__parser__node_stack 574 13 11_4]
+G c Z b b [last_element templates__parser__node_stack 578 13 11_4]
+G c Z b b [next templates__parser__node_stack 581 13 11_4]
+G c Z b b [next templates__parser__node_stack 587 14 11_4]
+G c Z b b [previous templates__parser__node_stack 590 13 11_4]
+G c Z b b [previous templates__parser__node_stack 596 14 11_4]
+G c Z b b [find_index templates__parser__node_stack 599 13 11_4]
+G c Z b b [find templates__parser__node_stack 609 13 11_4]
+G c Z b b [reverse_find_index templates__parser__node_stack 623 13 11_4]
+G c Z b b [reverse_find templates__parser__node_stack 635 13 11_4]
+G c Z b b [contains templates__parser__node_stack 649 13 11_4]
+G c Z b b [iterate templates__parser__node_stack 654 14 11_4]
+G c Z b b [reverse_iterate templates__parser__node_stack 662 14 11_4]
+G c Z b b [iterate templates__parser__node_stack 669 13 11_4]
+G c Z b b [iterate templates__parser__node_stack 672 13 11_4]
+G c Z b b [adjust templates__parser__node_stack__implementation 90 28 726_4_11_4]
+G c Z b b [finalize templates__parser__node_stack__implementation 93 28 726_4_11_4]
+G c Z b b [zero_counts templates__parser__node_stack__implementation 96 17 726_4_11_4]
+G c Z b b [busy templates__parser__node_stack__implementation 100 17 726_4_11_4]
+G c Z b b [unbusy templates__parser__node_stack__implementation 104 17 726_4_11_4]
+G c Z b b [lock templates__parser__node_stack__implementation 108 17 726_4_11_4]
+G c Z b b [unlock templates__parser__node_stack__implementation 112 17 726_4_11_4]
+G c Z b b [tc_check templates__parser__node_stack__implementation 116 17 726_4_11_4]
+G c Z b b [te_check templates__parser__node_stack__implementation 120 17 726_4_11_4]
+G c Z b b [is_busy templates__parser__node_stack__implementation 136 16 726_4_11_4]
+G c Z b b [is_locked templates__parser__node_stack__implementation 140 16 726_4_11_4]
+G c Z b b [initialize templates__parser__node_stack__implementation 161 28 726_4_11_4]
+G c Z b b [finalize templates__parser__node_stack__implementation 162 28 726_4_11_4]
+G c Z b b [initialize templates__parser__node_stack__implementation 167 28 726_4_11_4]
+G c Z b b [finalize templates__parser__node_stack__implementation 168 28 726_4_11_4]
+G c Z b b [reference_control_typeDA templates__parser__node_stack__implementation 84 12 726_4_11_4]
+G c Z b b [reference_control_typeDF templates__parser__node_stack__implementation 84 12 726_4_11_4]
+G c Z b b [reference_control_typeIP templates__parser__node_stack__implementation 84 12 726_4_11_4]
+G c Z b b [with_busyDF templates__parser__node_stack__implementation 158 12 726_4_11_4]
+G c Z b b [with_busyIP templates__parser__node_stack__implementation 158 12 726_4_11_4]
+G c Z b b [with_lockDF templates__parser__node_stack__implementation 164 12 726_4_11_4]
+G c Z b b [with_lockIP templates__parser__node_stack__implementation 164 12 726_4_11_4]
+G c Z b b [put_image templates__parser__node_stack 747 14 11_4]
+G c Z b b [adjust templates__parser__node_stack 750 25 11_4]
+G c Z b b [finalize templates__parser__node_stack 751 25 11_4]
+G c Z b b [write templates__parser__node_stack 753 14 11_4]
+G c Z b b [read templates__parser__node_stack 759 14 11_4]
+G c Z b b [read templates__parser__node_stack 773 14 11_4]
+G c Z b b [write templates__parser__node_stack 779 14 11_4]
+G c Z b b [write templates__parser__node_stack 798 14 11_4]
+G c Z b b [read templates__parser__node_stack 804 14 11_4]
+G c Z b b [write templates__parser__node_stack 820 14 11_4]
+G c Z b b [read templates__parser__node_stack 826 14 11_4]
+G c Z b b [pseudo_reference templates__parser__node_stack 840 13 11_4]
+G c Z b b [get_element_access templates__parser__node_stack 849 13 11_4]
+G c Z b b [cursorIP templates__parser__node_stack 768 9 11_4]
+G c Z b b [vectorDA templates__parser__node_stack 741 9 11_4]
+G c Z b b [vectorDF templates__parser__node_stack 741 9 11_4]
+G c Z b b [vectorIP templates__parser__node_stack 741 9 11_4]
+G c Z b b [finalize templates__parser__node_stack 865 25 11_4]
+G c Z b b [first templates__parser__node_stack 867 24 11_4]
+G c Z b b [last templates__parser__node_stack 868 24 11_4]
+G c Z b b [next templates__parser__node_stack 870 24 11_4]
+G c Z b b [previous templates__parser__node_stack 874 24 11_4]
+G c Z b b [constant_reference_typeDI templates__parser__node_stack 788 9 11_4]
+G c Z b b [constant_reference_typeDA templates__parser__node_stack 788 9 11_4]
+G c Z b b [constant_reference_typeDF templates__parser__node_stack 788 9 11_4]
+G c Z b b [constant_reference_typeIP templates__parser__node_stack 788 9 11_4]
+G c Z b b [reference_typeDI templates__parser__node_stack 810 9 11_4]
+G c Z b b [reference_typeDA templates__parser__node_stack 810 9 11_4]
+G c Z b b [reference_typeDF templates__parser__node_stack 810 9 11_4]
+G c Z b b [reference_typeIP templates__parser__node_stack 810 9 11_4]
+G c Z b b [elements_arrayIP templates__parser__node_stack 729 9 11_4]
+G c Z b b [elements_typeIP templates__parser__node_stack 732 9 11_4]
+G c Z b b [iteratorDF templates__parser__node_stack 857 9 11_4]
+G c Z b b [iteratorIP templates__parser__node_stack 857 9 11_4]
+G c Z b b [free templates__parser__node_stack 44 14 11_4]
+G c Z b b [append_slow_path templates__parser__node_stack 47 14 11_4]
+G c Z b b [is_whitespace templates__parser 15 13 none]
+G c Z b b [is_name_character templates__parser 20 13 none]
+G c Z b b [is_valid_path templates__parser 29 13 none]
+G c Z b b [strip templates__parser 63 13 none]
+G c Z b b [advance templates__parser 68 14 none]
+G c Z b b [find_close templates__parser 84 13 none]
+G c Z b b [find_open templates__parser 103 13 none]
+G c Z b b [stack_top templates__parser 122 13 none]
+G c Z b b [validate_path_or_error templates__parser 127 14 none]
+G c Z b b [close_block templates__parser 138 14 none]
+G c Z b b [open_block templates__parser 158 14 none]
+G c Z b b [handle_tag templates__parser 173 14 none]
+G r c none [parse templates__parser 8 13 none] [create templates__ast 35 13 none]
+G r c none [parse templates__parser 8 13 none] [append_child templates__ast 45 14 none]
+G r c none [parse templates__parser 8 13 none] [raise_error templates__diagnostics 18 14 none]
+G r c none [parse templates__parser 8 13 none] [release templates__ast 55 14 none]
+G r c none [validate_path_or_error templates__parser 127 14 none] [raise_error templates__diagnostics 18 14 none]
+G r c none [close_block templates__parser 138 14 none] [raise_error templates__diagnostics 18 14 none]
+G r c none [open_block templates__parser 158 14 none] [raise_error templates__diagnostics 18 14 none]
+G r c none [open_block templates__parser 158 14 none] [create templates__ast 35 13 none]
+G r c none [open_block templates__parser 158 14 none] [append_child templates__ast 45 14 none]
+G r c none [handle_tag templates__parser 173 14 none] [raise_error templates__diagnostics 18 14 none]
+G r c none [handle_tag templates__parser 173 14 none] [create templates__ast 35 13 none]
+G r c none [handle_tag templates__parser 173 14 none] [append_child templates__ast 45 14 none]
+X 1 ada.ads
+18K9*Ada 22e8 59|1r6 2r6 7r13 11r30 65r14 65r44
+X 5 a-contai.ads
+16K13*Containers 28e19 59|1r10 7r17 11r34
+22I9*Count_Type<integer> 59|7r28
+X 9 a-convec.ads
+62I9 Index_Type 59|12r7
+63+9 Element_Type 59|13r7
+74k24*Vectors 878e27 59|1w21 11r45
+81I12*Extended_Index{integer}
+91R9*Vector<12|43R9> 59|122r43[11] 139r34[11] 159r34[11] 174r34[11] 230r32[11]
+175V13*Length{5|22I9} 59|147s16[11] 296s16[11]
+483U14*Append 59|170s13[11] 243s13[11]
+538U14*Delete_Last 59|155s13[11]
+570V13*Last_Index{81I12[59|11]} 59|124s27[11]
+X 13 a-iteint.ads
+24h9 Forward_Iterator
+32h9 Reversible_Iterator<24R9[9|119]>
+X 15 a-string.ads
+16K13*Strings 35e16 59|2r10 65r18 65r48
+33n37*Both{33E9} 59|65r56
+X 16 a-strfix.ads
+49K21*Fixed 1390e22 59|2w18 65r26
+1133V13*Trim{string} 59|65s32
+X 27 system.ads
+67M9*Address
+X 37 s-memory.ads
+51V13*Alloc{27|67M9} 101i<c,__gnat_malloc>22
+66U14*Free 102i<c,__gnat_free>22
+74V13*Realloc{27|67M9} 103i<c,__gnat_realloc>22
+X 48 s-stalib.adb
+87U14 Break_Start 88i<c,__gnat_break_start>22
+X 55 templates.ads
+6K9*Templates 88e14 58|1r6 3r9 8r44 10r5 59|3r6 5r14 8r13 9r13 13r23 122r58
+. 134r10 140r16 145r22 148r10 151r10 160r16 165r15 168r16 169r7 180r15 183r10
+. 185r30 187r30 190r13 196r19 198r35 201r13 205r13 211r19 213r35 216r13 219r10
+. 222r19 223r13 224r10 228r44 229r21 240r21 242r15 242r37 255r22 256r16 260r13
+. 268r22 269r16 273r13 282r13 298r28 300r27 301r16 304r16 313r10 317r5
+X 56 templates-ast.ads
+4K19*Ast 76e18 58|1w16 8r54 59|8r23 9r23 13r33 122r68 140r26 145r32 160r26
+. 165r25 168r26 169r17 180r25 185r40 187r40 198r45 213r45 222r29 223r23 224r20
+. 228r54 229r31 240r31 242r25 242r47 255r32 256r26 260r23 268r32 269r26 273r23
+. 298r38 300r37 313r20
+6E9*Node_Kind 11e17 59|9r27 140r30 160r30
+7n7*Root_Node{6E9} 59|242r51
+8n7*Text_Node{6E9} 59|256r30 269r30
+9n7*Variable_Node{6E9} 59|223r27
+10n7*If_Node{6E9} 59|185r44 198r49 300r41
+11n7*Each_Node{6E9} 59|187r44 213r49
+14P9*Node_Access(13R9) 58|8r58 59|8r27 13r37 122r72 145r36 165r29 180r29
+. 228r58 229r35 240r35 298r42
+21e7*Kind{6E9} 59|150r17 300r20
+23i7*Line{positive} 59|302r23 305r23
+24i7*Column{positive} 59|302r33 305r33
+35V13*Create{14P9} 59|168s30 222s33 242s29 255s36 268s36
+45U14*Append_Child 59|169s21 224s24 260s27 273s27
+55U14*Release 59|313s24
+X 57 templates-diagnostics.ads
+1K19*Diagnostics 23e26 59|3w16 134r20 148r20 151r20 183r20 190r23 196r29
+. 201r23 205r23 211r29 216r23 219r20 282r23 301r26 304r26
+18U14*Raise_Error 59|134s32 148s32 151s32 183s32 190s35 196s41 201s35 205s35
+. 211s41 216s35 219s32 282s35 301s38 304s38
+X 58 templates-parser.ads
+3K19*Parser 55|6k9 58|10l15 10e21 59|5b24 317l15 317t21
+8V13*Parse{56|14P9} 8>20 59|228b13 315l8 315t13
+8a20 Source{string} 59|228b20 231r33 245r10 249r25 250r33 257r16 257r36 261r22
+. 261r42 270r16 274r22 279r35 286r19 289r13 292r19
+X 59 templates-parser.adb
+11K12 Node_Stack[9|74] 122r32 139r23 159r23 174r23 230r21
+15V13 Is_Whitespace{boolean} 15b13 15>28 18l8 18t21 191s16 206s16
+15e28 Ch{character} 17r14
+20V13 Is_Name_Character{boolean} 20b13 20>32 27l8 27t25 52s16
+20e32 Ch{character} 22r14 23r17 24r17 25r17 26r17
+29V13 Is_Valid_Path{boolean} 29b13 29>28 61l8 61t21 133s14
+29a28 Path{string} 33r10 37r10 38r17 38r23 39r17 39r23 40r17 45r17
+30b7 Previous_Dot{boolean} 47r16 50m13 53m13
+31b7 In_Component{boolean} 47r41 51m13 54m13 60r14
+45e11 Ch=45:17{character} 46r13 52r35
+63V13 Strip{string} 63b13 63>20 66l8 66t13 179s34 193s42 208s42
+63a20 Text{string} 65r38
+68U14 Advance 68b14 69>7 70=7 71=7 82l8 82t15 261s13 274s13 286s10 292s10
+69a7 Text{string} 74r17
+70i7 Line{positive} 76m13 76r21
+71i7 Column{positive} 77m13 79m13 79r23
+74e11 Ch=74:17{character} 75r13
+84V13 Find_Close{natural} 84b13 85>7 86>7 101l8 101t18 279s23
+85a7 Source{string} 90r18 94r31 95r13 95r46
+86i7 From{positive} 90r10 94r23
+94i11 Position{integer} 95r21 95r54 96r20
+103V13 Find_Open{natural} 103b13 104>7 105>7 120l8 120t17 250s22
+104a7 Source{string} 109r18 113r31 114r13 114r46
+105i7 From{positive} 109r10 113r23
+113i11 Position{integer} 114r21 114r54 115r20
+122V13 Stack_Top{56|14P9} 122b13 122>24 125l8 125t17 145s51 169s35 224s38
+. 260s41 273s41 298s57
+122r24 Stack{9|91R9[11]} 124r14 124r21
+127U14 Validate_Path_Or_Error 127b14 128>7 129>7 130>7 136l8 136t30 167s7
+. 221s10
+128a7 Path{string} 133r29
+129i7 Line{positive} 134r45
+130i7 Column{positive} 134r51
+138U14 Close_Block 138b14 139=7 140>7 141>7 142>7 143>7 156l8 156t19 185s10
+. 187s10
+139r7 Stack{9|91R9[11]} 145r62 147r10 155m7 155r7
+140e7 Kind{56|6E9} 150r25
+141a7 Name{string} 149r33 149r59 152r33
+142i7 Line{positive} 149r13 152r13
+143i7 Column{positive} 149r19 152r19
+145p7 Top{56|14P9} 150r13
+158U14 Open_Block 158b14 159=7 160>7 161>7 162>7 163>7 171l8 171t18 198s16
+. 213s16
+159r7 Stack{9|91R9[11]} 169r46 170m7 170r7
+160e7 Kind{56|6E9} 168r38
+161a7 Path{string} 167r31 168r44
+162i7 Line{positive} 167r37 168r50
+163i7 Column{positive} 167r43 168r56
+165p7 Child{56|14P9} 168m7 169r54 170r21
+173U14 Handle_Tag 173b14 174=7 175>7 176>7 177>7 226l8 226t18 287s10
+174r7 Stack{9|91R9[11]} 185m23 187m23 198m28 213m28 224r49
+175a7 Tag{string} 179r41
+176i7 Line{positive} 183r45 185r59 187r63 190r48 196r54 198r64 201r48 205r48
+. 211r54 213r66 216r48 219r45 221r41 223r49
+177i7 Column{positive} 183r51 185r65 187r69 190r54 196r60 198r70 201r54 205r54
+. 211r60 213r72 216r54 219r51 221r47 223r55
+179a7 Clean{string} 182r10 184r13 186r13 188r13 188r40 188r47 188r62 189r13
+. 191r31 191r38 193r49 193r56 193r75 203r13 203r40 203r47 203r62 204r13 206r31
+. 206r38 208r49 208r56 208r75 218r13 218r20 218r47 218r54 221r34 223r42
+180p7 Child{56|14P9} 222m10 224r57
+193a16 Path{string} 195r19 198r58
+208a16 Path{string} 210r19 213r60
+229p7 Root{56|14P9} 242m7 243r21 246r17 310r14 313m33 313r33
+230r7 Stack{9|91R9[11]} 243m7 243r7 260r52 273r52 288m13 288r13 296r10 298r68
+231i7 Position{positive} 249r13 250r41 257r24 261r30 265r24 270r24 274r30
+. 293m10
+232i7 Open_Pos{natural} 250m10 252r13 265r13 270r36 274r42 279r43 286r27
+. 286r39 289r21 292r27
+233i7 Close_Pos{natural} 279m10 281r13 289r37 292r43 293r22
+234i7 Line{positive} 253r26 261m56 261r56 266r26 274m57 274r57 277r22 286m54
+. 286r54 292m59 292r59
+235i7 Column{positive} 254r28 261m62 261r62 267r28 274m63 274r63 278r24 286m60
+. 286r60 292m65 292r65
+236i7 Tag_Line{positive} 277m10 283r16 290r13
+237i7 Tag_Column{positive} 278m10 283r26 291r13
+238i7 Text_Line{positive} 253m13 258r16 266m13 271r16
+239i7 Text_Column{positive} 254m13 259r16 267m13 272r16
+240p7 Child{56|14P9} 255m13 260r60 268m13 273r60
+298p13 Top{56|14P9} 300r16 302r19 302r29 305r19 305r29
+

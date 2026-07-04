@@ -1,0 +1,24 @@
+name = "templates_tests"
+description = "AUnit tests for the templates crate"
+version = "0.1.0-dev"
+
+authors = ["Bent Bracke"]
+maintainers = ["Bent Bracke <bent@example.com>"]
+maintainers-logins = ["bbracke"]
+
+licenses = "MIT OR Apache-2.0"
+website = ""
+tags = ["templates", "tests"]
+
+executables = ["tests"]
+
+project-files = ["templates_tests.gpr"]
+
+[[depends-on]]
+aunit = "*"
+
+[[depends-on]]
+templates = "*"
+
+[[pins]]
+templates = { path = ".." }

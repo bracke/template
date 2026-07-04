@@ -1,0 +1,352 @@
+V "GNAT Lib v15"
+A -gnatA
+A -gnat2022
+A -gnata
+A -gnatwa
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_DISPATCHING_CALLS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_FINALIZATION
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LOCAL_ALLOCATORS
+RV NO_NESTED_FINALIZATION
+RV NO_RECURSION
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_UNCHECKED_DEALLOCATION
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+RV NO_ELABORATION_CODE
+
+U templates.ast%b	templates-ast.adb	74e05d89 NE OO PK
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.unchecked_deallocation%s
+Z system%s		system.ads		system.ali
+Z system.finalization_primitives%s  s-finpri.adb  s-finpri.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.storage_elements%s  s-stoele.ads	s-stoele.ali
+Z system.storage_pools%s  s-stopoo.adb		s-stopoo.ali
+Z system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
+W templates%s		templates.adb		templates.ali
+
+U templates.ast%s	templates-ast.ads	a8e53c8e EE OO PF PK
+W ada%s			ada.ads			ada.ali
+W ada.containers%s	a-contai.ads		a-contai.ali
+Z ada.containers.generic_array_sort%s
+Z ada.containers.helpers%s  a-conhel.adb	a-conhel.ali
+W ada.containers.vectors%s
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.finalization%s	a-finali.ads		a-finali.ali
+Z ada.iterator_interfaces%s
+Z ada.streams%s		a-stream.adb		a-stream.ali
+W ada.strings%s		a-string.ads		a-string.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z ada.unchecked_deallocation%s
+Z system%s		system.ads		system.ali
+Z system.assertions%s	s-assert.adb		s-assert.ali
+Z system.finalization_primitives%s  s-finpri.adb  s-finpri.ali
+Z system.pool_global%s	s-pooglo.adb		s-pooglo.ali
+Z system.put_images%s	s-putima.adb		s-putima.ali
+Z system.return_stack%s	s-retsta.ads		s-retsta.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.storage_elements%s  s-stoele.ads	s-stoele.ali
+Z system.storage_pools%s  s-stopoo.adb		s-stopoo.ali
+Z system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
+Z system.stream_attributes%s  s-stratt.adb	s-stratt.ali
+W templates%s		templates.adb		templates.ali
+
+D ada.ads		20250808065140 76789da1 ada%s
+D a-assert.ads		20250808065140 ba465f5c ada.assertions%s
+D a-charac.ads		20250808065140 2d3ec45b ada.characters%s
+D a-chlat1.ads		20250808065140 e0d72e76 ada.characters.latin_1%s
+D a-contai.ads		20250808065140 61e5e089 ada.containers%s
+D a-cgarso.ads		20250808065140 9129bfa8 ada.containers.generic_array_sort%s
+D a-conhel.ads		20250808065140 46fe1ce3 ada.containers.helpers%s
+D a-conhel.adb		20250808065140 854d323e ada.containers.helpers%b
+D a-convec.ads		20250808065140 91fb49f3 ada.containers.vectors%s
+D a-convec.adb		20250808065140 b2ed0168 ada.containers.vectors%b
+D a-except.ads		20250808065140 e7970cd9 ada.exceptions%s
+D a-finali.ads		20250808065140 bf4f806b ada.finalization%s
+D a-iteint.ads		20250808065140 49a8bee2 ada.iterator_interfaces%s
+D a-stream.ads		20250808065140 17477cbd ada.streams%s
+D a-string.ads		20250808065140 90ac6797 ada.strings%s
+D a-strmap.ads		20250808065140 1f91ebb6 ada.strings.maps%s
+D a-strsea.ads		20250808065140 18c3c634 ada.strings.search%s
+D a-sttebu.ads		20250808065140 f1ad67a2 ada.strings.text_buffers%s
+D a-strunb.ads		20250808065140 b10770ab ada.strings.unbounded%s
+D a-stuten.ads		20250808065140 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20250808065140 fbca0ad5 ada.tags%s
+D a-unccon.ads		20250808065140 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20250808065140 c3a8ac65 ada.unchecked_deallocation%s
+D interfac.ads		20250808065140 9111f9c1 interfaces%s
+D i-c.ads		20250808065140 e94c966a interfaces.c%s
+D system.ads		20250808065140 14286b0f system%s
+D s-assert.ads		20250808065140 9c4520c7 system.assertions%s
+D s-atocou.ads		20250808065140 dc18efc3 system.atomic_counters%s
+D s-atocou.adb		20250808065140 6fe685de system.atomic_counters%b
+D s-atopri.ads		20250808065140 e19c1d89 system.atomic_primitives%s
+D s-exctab.ads		20250808065140 91bef6ef system.exception_table%s
+D s-finpri.ads		20250808065140 5970d55a system.finalization_primitives%s
+D s-finroo.ads		20250808065140 0a7c3ed4 system.finalization_root%s
+D s-memory.ads		20250808065140 18949c1a system.memory%s
+D s-oscons.ads		20250827122531 068e1a91 system.os_constants%s
+D s-oslock.ads		20250808065140 13fa6b78 system.os_locks%s
+D s-parame.ads		20250808065140 3597fc11 system.parameters%s
+D s-pooglo.ads		20250808065140 91708d21 system.pool_global%s
+D s-putima.ads		20250808065140 17291fe4 system.put_images%s
+D s-retsta.ads		20250808065140 0f6b06cb system.return_stack%s
+D s-secsta.ads		20250808065140 578279f5 system.secondary_stack%s
+D s-soflin.ads		20250808065140 5d88fdea system.soft_links%s
+D s-stache.ads		20250808065140 0b81c1fe system.stack_checking%s
+D s-stalib.ads		20250808065140 1c9580f6 system.standard_library%s
+D s-stalib.adb		20250808065140 eb464a47 system.standard_library%b
+D s-stoele.ads		20250808065140 ccded4e8 system.storage_elements%s
+D s-stopoo.ads		20250808065140 e9fa2dd8 system.storage_pools%s
+D s-stposu.ads		20250808065140 e0b9fefd system.storage_pools.subpools%s
+D s-stratt.ads		20250808065140 516607ae system.stream_attributes%s
+D s-traent.ads		20250808065140 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20250808065140 fa2a7f59 system.unsigned_types%s
+D templates.ads		20260704133540 8d75865f templates%s
+D templates-ast.ads	20260704134133 056c8389 templates.ast%s
+D templates-ast.adb	20260704134134 b2247265 templates.ast%b
+G a e
+G c Z s s [has_element templates__ast__node_vectors 115 13 16_4]
+G c Z s s [empty templates__ast__node_vectors 125 13 16_4]
+G c Z s s [Oeq templates__ast__node_vectors 127 24 16_4]
+G c Z s s [to_vector templates__ast__node_vectors 136 13 16_4]
+G c Z s s [to_vector templates__ast__node_vectors 139 13 16_4]
+G c Z s s [Oconcat templates__ast__node_vectors 145 13 16_4]
+G c Z s s [Oconcat templates__ast__node_vectors 149 13 16_4]
+G c Z s s [Oconcat templates__ast__node_vectors 153 13 16_4]
+G c Z s s [Oconcat templates__ast__node_vectors 157 13 16_4]
+G c Z s s [capacity templates__ast__node_vectors 161 13 16_4]
+G c Z s s [reserve_capacity templates__ast__node_vectors 164 14 16_4]
+G c Z s s [length templates__ast__node_vectors 175 13 16_4]
+G c Z s s [set_length templates__ast__node_vectors 178 14 16_4]
+G c Z s s [is_empty templates__ast__node_vectors 187 13 16_4]
+G c Z s s [clear templates__ast__node_vectors 190 14 16_4]
+G c Z s s [to_cursor templates__ast__node_vectors 194 13 16_4]
+G c Z s s [to_index templates__ast__node_vectors 201 13 16_4]
+G c Z s s [element templates__ast__node_vectors 206 13 16_4]
+G c Z s s [element templates__ast__node_vectors 213 13 16_4]
+G c Z s s [replace_element templates__ast__node_vectors 217 14 16_4]
+G c Z s s [replace_element templates__ast__node_vectors 228 14 16_4]
+G c Z s s [query_element templates__ast__node_vectors 239 14 16_4]
+G c Z s s [query_element templates__ast__node_vectors 250 14 16_4]
+G c Z s s [update_element templates__ast__node_vectors 259 14 16_4]
+G c Z s s [update_element templates__ast__node_vectors 276 14 16_4]
+G c Z s s [constant_reference templates__ast__node_vectors 303 13 16_4]
+G c Z s s [reference templates__ast__node_vectors 308 13 16_4]
+G c Z s s [constant_reference templates__ast__node_vectors 313 13 16_4]
+G c Z s s [reference templates__ast__node_vectors 318 13 16_4]
+G c Z s s [assign templates__ast__node_vectors 323 14 16_4]
+G c Z s s [copy templates__ast__node_vectors 325 13 16_4]
+G c Z s s [move templates__ast__node_vectors 327 14 16_4]
+G c Z s s [new_vector templates__ast__node_vectors 333 13 16_4]
+G c Z s s [insert_vector templates__ast__node_vectors 337 14 16_4]
+G c Z s s [insert_vector templates__ast__node_vectors 361 14 16_4]
+G c Z s s [insert_vector templates__ast__node_vectors 378 14 16_4]
+G c Z s s [insert templates__ast__node_vectors 396 14 16_4]
+G c Z s s [insert templates__ast__node_vectors 404 14 16_4]
+G c Z s s [insert templates__ast__node_vectors 412 14 16_4]
+G c Z s s [insert templates__ast__node_vectors 421 14 16_4]
+G c Z s s [insert templates__ast__node_vectors 438 14 16_4]
+G c Z s s [prepend_vector templates__ast__node_vectors 449 14 16_4]
+G c Z s s [prepend templates__ast__node_vectors 459 14 16_4]
+G c Z s s [append_vector templates__ast__node_vectors 466 14 16_4]
+G c Z s s [append templates__ast__node_vectors 476 14 16_4]
+G c Z s s [append templates__ast__node_vectors 483 14 16_4]
+G c Z s s [insert_space templates__ast__node_vectors 486 14 16_4]
+G c Z s s [insert_space templates__ast__node_vectors 503 14 16_4]
+G c Z s s [delete templates__ast__node_vectors 514 14 16_4]
+G c Z s s [delete templates__ast__node_vectors 524 14 16_4]
+G c Z s s [delete_first templates__ast__node_vectors 533 14 16_4]
+G c Z s s [delete_last templates__ast__node_vectors 538 14 16_4]
+G c Z s s [reverse_elements templates__ast__node_vectors 546 14 16_4]
+G c Z s s [swap templates__ast__node_vectors 549 14 16_4]
+G c Z s s [swap templates__ast__node_vectors 554 14 16_4]
+G c Z s s [first_index templates__ast__node_vectors 560 13 16_4]
+G c Z s s [first templates__ast__node_vectors 563 13 16_4]
+G c Z s s [first_element templates__ast__node_vectors 567 13 16_4]
+G c Z s s [last_index templates__ast__node_vectors 570 13 16_4]
+G c Z s s [last templates__ast__node_vectors 574 13 16_4]
+G c Z s s [last_element templates__ast__node_vectors 578 13 16_4]
+G c Z s s [next templates__ast__node_vectors 581 13 16_4]
+G c Z s s [next templates__ast__node_vectors 587 14 16_4]
+G c Z s s [previous templates__ast__node_vectors 590 13 16_4]
+G c Z s s [previous templates__ast__node_vectors 596 14 16_4]
+G c Z s s [find_index templates__ast__node_vectors 599 13 16_4]
+G c Z s s [find templates__ast__node_vectors 609 13 16_4]
+G c Z s s [reverse_find_index templates__ast__node_vectors 623 13 16_4]
+G c Z s s [reverse_find templates__ast__node_vectors 635 13 16_4]
+G c Z s s [contains templates__ast__node_vectors 649 13 16_4]
+G c Z s s [iterate templates__ast__node_vectors 654 14 16_4]
+G c Z s s [reverse_iterate templates__ast__node_vectors 662 14 16_4]
+G c Z s s [iterate templates__ast__node_vectors 669 13 16_4]
+G c Z s s [iterate templates__ast__node_vectors 672 13 16_4]
+G c Z s s [adjust templates__ast__node_vectors__implementation 90 28 726_4_16_4]
+G c Z s s [finalize templates__ast__node_vectors__implementation 93 28 726_4_16_4]
+G c Z s s [zero_counts templates__ast__node_vectors__implementation 96 17 726_4_16_4]
+G c Z s s [busy templates__ast__node_vectors__implementation 100 17 726_4_16_4]
+G c Z s s [unbusy templates__ast__node_vectors__implementation 104 17 726_4_16_4]
+G c Z s s [lock templates__ast__node_vectors__implementation 108 17 726_4_16_4]
+G c Z s s [unlock templates__ast__node_vectors__implementation 112 17 726_4_16_4]
+G c Z s s [tc_check templates__ast__node_vectors__implementation 116 17 726_4_16_4]
+G c Z s s [te_check templates__ast__node_vectors__implementation 120 17 726_4_16_4]
+G c Z s s [is_busy templates__ast__node_vectors__implementation 136 16 726_4_16_4]
+G c Z s s [is_locked templates__ast__node_vectors__implementation 140 16 726_4_16_4]
+G c Z s s [initialize templates__ast__node_vectors__implementation 161 28 726_4_16_4]
+G c Z s s [finalize templates__ast__node_vectors__implementation 162 28 726_4_16_4]
+G c Z s s [initialize templates__ast__node_vectors__implementation 167 28 726_4_16_4]
+G c Z s s [finalize templates__ast__node_vectors__implementation 168 28 726_4_16_4]
+G c Z s s [reference_control_typeDA templates__ast__node_vectors__implementation 84 12 726_4_16_4]
+G c Z s s [reference_control_typeDF templates__ast__node_vectors__implementation 84 12 726_4_16_4]
+G c Z s s [reference_control_typeIP templates__ast__node_vectors__implementation 84 12 726_4_16_4]
+G c Z s s [with_busyDF templates__ast__node_vectors__implementation 158 12 726_4_16_4]
+G c Z s s [with_busyIP templates__ast__node_vectors__implementation 158 12 726_4_16_4]
+G c Z s s [with_lockDF templates__ast__node_vectors__implementation 164 12 726_4_16_4]
+G c Z s s [with_lockIP templates__ast__node_vectors__implementation 164 12 726_4_16_4]
+G c Z s s [put_image templates__ast__node_vectors 747 14 16_4]
+G c Z s s [adjust templates__ast__node_vectors 750 25 16_4]
+G c Z s s [finalize templates__ast__node_vectors 751 25 16_4]
+G c Z s s [write templates__ast__node_vectors 753 14 16_4]
+G c Z s s [read templates__ast__node_vectors 759 14 16_4]
+G c Z s s [read templates__ast__node_vectors 773 14 16_4]
+G c Z s s [write templates__ast__node_vectors 779 14 16_4]
+G c Z s s [write templates__ast__node_vectors 798 14 16_4]
+G c Z s s [read templates__ast__node_vectors 804 14 16_4]
+G c Z s s [write templates__ast__node_vectors 820 14 16_4]
+G c Z s s [read templates__ast__node_vectors 826 14 16_4]
+G c Z s s [pseudo_reference templates__ast__node_vectors 840 13 16_4]
+G c Z s s [get_element_access templates__ast__node_vectors 849 13 16_4]
+G c Z s s [cursorIP templates__ast__node_vectors 768 9 16_4]
+G c Z s s [vectorDA templates__ast__node_vectors 741 9 16_4]
+G c Z s s [vectorDF templates__ast__node_vectors 741 9 16_4]
+G c Z s s [vectorIP templates__ast__node_vectors 741 9 16_4]
+G c Z s s [finalize templates__ast__node_vectors 865 25 16_4]
+G c Z s s [first templates__ast__node_vectors 867 24 16_4]
+G c Z s s [last templates__ast__node_vectors 868 24 16_4]
+G c Z s s [next templates__ast__node_vectors 870 24 16_4]
+G c Z s s [previous templates__ast__node_vectors 874 24 16_4]
+G c Z s s [constant_reference_typeDI templates__ast__node_vectors 788 9 16_4]
+G c Z s s [constant_reference_typeDA templates__ast__node_vectors 788 9 16_4]
+G c Z s s [constant_reference_typeDF templates__ast__node_vectors 788 9 16_4]
+G c Z s s [constant_reference_typeIP templates__ast__node_vectors 788 9 16_4]
+G c Z s s [reference_typeDI templates__ast__node_vectors 810 9 16_4]
+G c Z s s [reference_typeDA templates__ast__node_vectors 810 9 16_4]
+G c Z s s [reference_typeDF templates__ast__node_vectors 810 9 16_4]
+G c Z s s [reference_typeIP templates__ast__node_vectors 810 9 16_4]
+G c Z s s [elements_arrayIP templates__ast__node_vectors 729 9 16_4]
+G c Z s s [elements_typeIP templates__ast__node_vectors 732 9 16_4]
+G c Z s s [iteratorDF templates__ast__node_vectors 857 9 16_4]
+G c Z s s [iteratorIP templates__ast__node_vectors 857 9 16_4]
+G c Z s s [free templates__ast__node_vectors 44 14 16_4]
+G c Z s s [append_slow_path templates__ast__node_vectors 47 14 16_4]
+G c Z s b [create templates__ast 35 13 none]
+G c Z s b [append_child templates__ast 45 14 none]
+G c Z s b [retain templates__ast 51 14 none]
+G c Z s b [release templates__ast 55 14 none]
+G c Z s b [text templates__ast 60 13 none]
+G c Z s b [child_count templates__ast 65 13 none]
+G c Z s b [child templates__ast 71 13 none]
+G c Z s s [nodeDI templates__ast 20 9 none]
+G c Z s s [nodeDA templates__ast 20 9 none]
+G c Z s s [nodeDF templates__ast 20 9 none]
+G c Z s s [nodeIP templates__ast 20 9 none]
+G c Z b b [free templates__ast 7 14 none]
+X 1 ada.ads
+18K9*Ada 22e8 53|1r6 2r6 16r32 22r19 54|1r6 5r8 7r26
+X 5 a-contai.ads
+16K13*Containers 28e19 53|2r10 16r36
+22I9*Count_Type<integer>
+X 9 a-convec.ads
+62I9 Index_Type 53|17r7
+63+9 Element_Type 53|18r7
+74k24*Vectors 878e27 53|2w21 16r47
+91R9*Vector<12|43R9> 53|25r32[16]
+122r4*Empty_Vector{91R9[53|16]} 54|22r36[53|16]
+175V13*Length{5|22I9} 54|69s37[53|16]
+483U14*Append 54|31s23[53|16]
+X 13 a-iteint.ads
+24h9 Forward_Iterator
+32h9 Reversible_Iterator<24R9[9|119]>
+X 15 a-string.ads
+16K13*Strings 35e16 53|1r10 22r23 54|5r12
+X 19 a-strunb.ads
+91K21*Unbounded 1641e26 53|1w18 22r31 54|5r20
+105R9*Unbounded_String<12|43R9> 1620e15 53|22r41
+122V13*To_Unbounded_String{105R9} 54|19s23
+135V13*To_String{string} 54|64s14
+X 23 a-uncdea.ads
+23u15*Unchecked_Deallocation 54|1w10 7r30
+X 26 system.ads
+67M9*Address
+X 34 s-memory.ads
+51V13*Alloc{26|67M9} 101i<c,__gnat_malloc>22
+66U14*Free 102i<c,__gnat_free>22
+74V13*Realloc{26|67M9} 103i<c,__gnat_realloc>22
+X 45 s-stalib.adb
+87U14 Break_Start 88i<c,__gnat_break_start>22
+X 52 templates.ads
+6K9*Templates 88e14 53|4r9 76r5 54|3r14 81r5
+X 53 templates-ast.ads
+4K19*Ast 52|6k9 53|76l15 76e18 54|3b24 81l15 81t18
+6E9*Node_Kind 11e17 21r19 36r16 54|10r16
+7n7*Root_Node{6E9} 21r32
+8n7*Text_Node{6E9}
+9n7*Variable_Node{6E9}
+10n7*If_Node{6E9}
+11n7*Each_Node{6E9}
+13R9*Node 14r31 20c9 27e14 54|7r54 17r18
+14P9*Node_Access(13R9) 18r23 40r14 46r16 47r16 51r29 55r37 60r26 65r33 72r15
+. 74r14 54|7r60 14r14 27r16 28r16 34r29 41r37 42r20 62r26 67r33 73r15 75r14
+16K12*Node_Vectors[9|74] 25r19 54|22r23
+21e7*Kind{6E9} 54|18m10
+22r7*Text{19|105R9} 54|19m10 64r30
+23i7*Line{positive} 54|20m10
+24i7*Column{positive} 54|21m10
+25r7*Children{9|91R9[16]} 54|22m10 31m14 54r25 69r28 78r19
+26i7*Ref_Count{natural} 54|23m10 37m15 37r33 48r15 49m15 49r33
+35V13*Create{14P9} 36>7 37>7 38>7 39>7 54|9b13 24l8 24t14
+36e7 Kind{6E9} 54|10b7 18r23
+37a7 Text{string} 54|11b7 19r44
+38i7 Line{positive} 54|12b7 20r23
+39i7 Column{positive} 54|13b7 21r23
+45U14*Append_Child 46>7 47>7 54|26b14 32l8 32t20
+46p7 Parent{14P9} 54|27b7 31r7
+47p7 Child{14P9} 54|28b7 31r31
+51U14*Retain 51>22 54|34b14 39l8 39t14
+51p22 Item{14P9} 54|34b22 36r10 37r10 37r28
+55U14*Release 55=23 54|41b14 56s10 60l8 60t15
+55p23 Item{14P9} 54|41b23 44r10 48r10 49r10 49r28 50m10 54r20 59m13
+60V13*Text{string} 60>19 54|62b13 65l8 65t12
+60p19 Item{14P9} 54|62b19 64r25
+65V13*Child_Count{natural} 65>26 54|67b13 70l8 70t19
+65p26 Item{14P9} 54|67b26 69r23
+71V13*Child{14P9} 72>7 73>7 54|72b13 79l8 79t13
+72p7 Item{14P9} 54|73b7 78r14
+73i7 Index{positive} 54|74b7 78r29
+X 54 templates-ast.adb
+7U14 Free[23|23] 59s7
+42p7 Child_Node{53|14P9} 55m10 56m19 56r19
+54p11 Child{53|14P9} 55r24
+

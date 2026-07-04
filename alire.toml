@@ -1,0 +1,16 @@
+name = "templates"
+description = "Small Handlebars-like block template engine in Ada"
+version = "1.0.0"
+
+authors = ["Bent Bracke"]
+maintainers = ["Bent Bracke <bent@example.com>"]
+maintainers-logins = ["bbracke"]
+
+licenses = "MIT OR Apache-2.0"
+website = "https://github.com/bracke/template.git"
+tags = ["templates", "html", "server", "handlebars"]
+
+project-files = ["templates.gpr"]
+
+[[depends-on]]
+aunit = "*"

@@ -1,0 +1,145 @@
+V "GNAT Lib v15"
+M P W=b
+A -gnatA
+A -gnat2022
+A -gnata
+A -gnatwa
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+
+RN
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_LOCAL_ALLOCATORS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U check_all%b		check_all.adb		e16166e5 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.command_line%s	a-comlin.adb		a-comlin.ali
+W ada.directories%s	a-direct.adb		a-direct.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W gnat%s		gnat.ads		gnat.ali
+W gnat.os_lib%s		g-os_lib.ads		g-os_lib.ali
+W project_tools%s	project_tools.ads	project_tools.ali
+W project_tools.files%s	project_tools-files.adb	project_tools-files.ali
+W project_tools.processes%s  project_tools-processes.adb  project_tools-processes.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+D ada.ads		20250808065140 76789da1 ada%s
+D a-calend.ads		20250808065140 bf7f3cc9 ada.calendar%s
+D a-charac.ads		20250808065140 2d3ec45b ada.characters%s
+D a-chlat1.ads		20250808065140 e0d72e76 ada.characters.latin_1%s
+D a-comlin.ads		20250808065140 4aa66568 ada.command_line%s
+D a-direct.ads		20250808065140 467e87a1 ada.directories%s
+D a-except.ads		20250808065140 e7970cd9 ada.exceptions%s
+D a-finali.ads		20250808065140 bf4f806b ada.finalization%s
+D a-ioexce.ads		20250808065140 40018c65 ada.io_exceptions%s
+D a-stream.ads		20250808065140 17477cbd ada.streams%s
+D a-string.ads		20250808065140 90ac6797 ada.strings%s
+D a-strmap.ads		20250808065140 1f91ebb6 ada.strings.maps%s
+D a-strsea.ads		20250808065140 18c3c634 ada.strings.search%s
+D a-sttebu.ads		20250808065140 f1ad67a2 ada.strings.text_buffers%s
+D a-strunb.ads		20250808065140 b10770ab ada.strings.unbounded%s
+D a-stuten.ads		20250808065140 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20250808065140 fbca0ad5 ada.tags%s
+D a-textio.ads		20250808065140 34ef47de ada.text_io%s
+D a-unccon.ads		20250808065140 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20250808065140 c3a8ac65 ada.unchecked_deallocation%s
+D check_all.adb		20260704140231 64c1cae7 check_all%b
+D gnat.ads		20250808065140 b5988c27 gnat%s
+D g-os_lib.ads		20250808065140 0db74523 gnat.os_lib%s
+D interfac.ads		20250808065140 9111f9c1 interfaces%s
+D i-c.ads		20250808065140 e94c966a interfaces.c%s
+D i-cstrea.ads		20250808065140 ffd01b9d interfaces.c_streams%s
+D project_tools.ads	20260608162800 377f12dc project_tools%s
+D project_tools-files.ads  20260629162424 76210d74 project_tools.files%s
+D project_tools-processes.ads  20260629162511 21964d9b project_tools.processes%s
+D system.ads		20250808065140 14286b0f system%s
+D s-atocou.ads		20250808065140 dc18efc3 system.atomic_counters%s
+D s-conca2.ads		20250808065140 b5fb73f7 system.concat_2%s
+D s-crtl.ads		20250808065140 beb39b9e system.crtl%s
+D s-exctab.ads		20250808065140 91bef6ef system.exception_table%s
+D s-ficobl.ads		20250808065140 dc5161d4 system.file_control_block%s
+D s-finpri.ads		20250808065140 5970d55a system.finalization_primitives%s
+D s-finroo.ads		20250808065140 0a7c3ed4 system.finalization_root%s
+D s-oscons.ads		20250827122531 068e1a91 system.os_constants%s
+D s-os_lib.ads		20250808065140 dd4133ed system.os_lib%s
+D s-oslock.ads		20250808065140 13fa6b78 system.os_locks%s
+D s-parame.ads		20250808065140 3597fc11 system.parameters%s
+D s-putima.ads		20250808065140 17291fe4 system.put_images%s
+D s-retsta.ads		20250808065140 0f6b06cb system.return_stack%s
+D s-secsta.ads		20250808065140 578279f5 system.secondary_stack%s
+D s-soflin.ads		20250808065140 5d88fdea system.soft_links%s
+D s-stache.ads		20250808065140 0b81c1fe system.stack_checking%s
+D s-stalib.ads		20250808065140 1c9580f6 system.standard_library%s
+D s-stoele.ads		20250808065140 ccded4e8 system.storage_elements%s
+D s-stratt.ads		20250808065140 516607ae system.stream_attributes%s
+D s-string.ads		20250808065140 582aac7d system.strings%s
+D s-traent.ads		20250808065140 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20250808065140 fa2a7f59 system.unsigned_types%s
+D s-wchcon.ads		20250808065140 d9032363 system.wch_con%s
+G a e
+G c Z b b [check_all standard 10 11 none]
+G r c none [check_all standard 10 11 none] [find_root_upward project_tools__files 168 13 none]
+G r c none [check_all standard 10 11 none] [run project_tools__processes 38 14 none]
+X 1 ada.ads
+18K9*Ada 22e8 21|1r6 2r6 3r6 4r6 13r33 29r7 30r10 32r7 32r41 39r4 40r4 40r38
+. 45r7 46r10 47r44 48r7 48r41
+X 5 a-comlin.ads
+40K13*Command_Line 148e21 21|1w10 32r11 32r45 40r8 40r42 48r11 48r45
+74I9*Exit_Status<integer>
+76i4*Success{74I9} 21|40r55
+77i4*Failure{74I9} 21|32r58 48r58
+79U14*Set_Exit_Status 21|32s24 40s21 48s24
+X 6 a-direct.ads
+76K13*Directories 524e20 21|2w10 13r37
+82V13*Current_Directory{string} 21|13s49
+X 7 a-except.ads
+44K13*Exceptions 309e19 21|3w10 47r48
+84V13*Exception_Message{string} 21|47s59
+X 18 a-textio.ads
+58K13*Text_IO 785e16 21|4w10 29r11 30r14 39r8 45r11 46r14
+67P9*File_Type
+189V13*Standard_Error{67P9} 21|30s22 46s22
+555U14*Put_Line 21|29s19 45s19
+565U14*Put_Line 21|39s16
+X 21 check_all.adb
+10U11*Check_All 10b11 49l5 49t14
+12V13 Project_Root{string} 12b13 16l8 16t20 18s30
+13a7 Here{string} 15r52
+18a4 Root{string} 28r7 36r35 37r36
+20U14 Run=25:67 36s4 37s4
+21a7 Label{string}
+22a7 Dir{string}
+23a7 Program{string}
+24a7 Args{39|749A12}
+25b7 Quiet{boolean}
+44r9 Error{7|53R9} 47r78
+X 22 gnat.ads
+40K9*GNAT 21|6r6 24r17 22|63e9
+X 23 g-os_lib.ads
+51K14*OS_Lib=51:36 21|6w11 24r22
+X 27 project_tools.ads
+1K9*Project_Tools 21|7r6 8r6 15r14 25r43 27|3e18
+X 28 project_tools-files.ads
+3K23*Files 21|7w20 15r28 28|176e24
+168V13*Find_Root_Upward{string} 21|15s34
+X 29 project_tools-processes.ads
+4K23*Processes 21|8w20 25r57 29|120e28
+38U14*Run 21|25r67
+X 39 s-os_lib.ads
+71A12*String_List{50|52A9}<integer>
+749A12*Argument_List{71A12}<integer> 21|24r29
+X 50 s-string.ads
+43P9*String_Access(string)
+52A9*String_List(43P9)<integer>
+

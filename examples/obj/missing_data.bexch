@@ -1,0 +1,21 @@
+[GENERATED OBJECT FILE]
+b__missing_data.o
+[PROJECT FILES]
+/home/bent/Projekte/Ada/template/examples/templates_examples.gpr
+20260704135706 2ab8e1ebd9cf009bb4b84e2d10b8df5a
+/home/bent/Projekte/Ada/template/templates.gpr
+20260704133126 ae1ea2d8c7736dea456fa51ebac65095
+[BOUND OBJECT FILES]
+/home/bent/Projekte/Ada/template/examples/obj/missing_data.o
+[GENERATED SOURCE FILES]
+b__missing_data.ads
+b__missing_data.adb
+b__missing_data.ali
+[RESULTING OPTIONS]
+-L/home/bent/Projekte/Ada/template/examples/obj/
+-L/home/bent/Projekte/Ada/template/examples/obj/
+-L/home/bent/Projekte/Ada/template/lib/
+-L/home/bent/.local/share/alire/toolchains/gnat_native_15.2.1_4640d4b3/lib/gcc/x86_64-pc-linux-gnu/15.2.0/adalib/
+-static
+/home/bent/.local/share/alire/toolchains/gnat_native_15.2.1_4640d4b3/lib/gcc/x86_64-pc-linux-gnu/15.2.0/adalib/libgnat.a
+-ldl
