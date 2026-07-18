@@ -37,5 +37,8 @@ jobs:
         run: alr --non-interactive build
       - name: Run check_all
         # Library build, tests crate build + AUnit run, and every example build + run.
+        # Run under `alr exec` so gprbuild (which check_tests requires on PATH) and the
+        # Alire toolchain are available -- setup-alire installs them into the Alire
+        # environment, not the bare PATH.
         working-directory: templates
-        run: ./tools/bin/check_all
+        run: alr exec -- ./tools/bin/check_all
