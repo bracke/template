@@ -1,0 +1,41 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  linux:
+    name: Linux build, tests, and examples
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out templates
+        uses: actions/checkout@v4
+        with:
+          path: templates
+      - name: Check out project_tools sibling
+        # tools/templates_tools.gpr withs project_tools (the check_all validator);
+        # the tools root pins it at ../../project_tools.
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ github.repository_owner }}/project_tools
+          path: project_tools
+      - name: Set up Alire
+        uses: alire-project/setup-alire@v5
+        with:
+          toolchain: gnat_native=15.2.1 gprbuild
+      - name: Build library
+        # Generates config/templates_config.gpr, which templates.gpr withs.
+        working-directory: templates
+        run: alr --non-interactive build
+      - name: Build the check_all validator
+        # tools/ is its own Alire root with project_tools path-pinned; alr build here
+        # generates project_tools' gitignored config and builds check_all, check_tests,
+        # and release_check.
+        working-directory: templates/tools
+        run: alr --non-interactive build
+      - name: Run check_all
+        # Library build, tests crate build + AUnit run, and every example build + run.
+        working-directory: templates
+        run: ./tools/bin/check_all
