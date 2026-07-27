@@ -11,18 +11,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out templates
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           path: templates
       - name: Check out project_tools sibling
         # tools/templates_tools.gpr withs project_tools (the check_all validator);
         # the tools root pins it at ../../project_tools.
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: ${{ github.repository_owner }}/project_tools
           path: project_tools
       - name: Set up Alire
-        uses: alire-project/setup-alire@v5
+        uses: alire-project/setup-alire@v6
         with:
           toolchain: gnat_native=15.2.1 gprbuild
       - name: Build library
