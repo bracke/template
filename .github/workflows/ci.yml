@@ -17,7 +17,7 @@ jobs:
       - name: Check out sibling crates (transitive pin closure)
         uses: bracke/project_tools/.github/actions/checkout-ada-siblings@main
         with:
-          root: template
+          root: templates
       - name: Set up Alire
         uses: alire-project/setup-alire@v6
         with:
