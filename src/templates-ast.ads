@@ -7,6 +7,7 @@ package Templates.Ast is
      (Root_Node,
       Text_Node,
       Variable_Node,
+      Raw_Variable_Node,
       If_Node,
       Each_Node);
 

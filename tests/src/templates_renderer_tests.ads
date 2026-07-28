@@ -25,4 +25,8 @@ package Templates_Renderer_Tests is
    --  @param Item AUnit fixture
    procedure Test_Template_Copy (Item : in out Fixture);
 
+   --  Test raw (unescaped) triple-brace variable rendering.
+   --  @param Item AUnit fixture
+   procedure Test_Raw_Variables (Item : in out Fixture);
+
 end Templates_Renderer_Tests;

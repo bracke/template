@@ -58,12 +58,17 @@ package body Templates.Renderer is
 
    procedure Append_Value
      (Item   : Templates.Values.Value;
-      Output : in out Unbounded_String)
+      Output : in out Unbounded_String;
+      Escape : Boolean := True)
    is
    begin
       case Templates.Values.Kind (Item) is
          when Templates.Values.String_Value =>
-            Append (Output, Templates.Html.Escape (Templates.Values.As_String (Item)));
+            if Escape then
+               Append (Output, Templates.Html.Escape (Templates.Values.As_String (Item)));
+            else
+               Append (Output, Templates.Values.As_String (Item));
+            end if;
          when Templates.Values.Boolean_Value =>
             if Templates.Values.As_Boolean (Item) then
                Append (Output, "true");
@@ -91,6 +96,9 @@ package body Templates.Renderer is
             end if;
          when Templates.Ast.Variable_Node =>
             Append_Value (Resolve (Context, Templates.Ast.Text (Item)), Output);
+         when Templates.Ast.Raw_Variable_Node =>
+            Append_Value
+              (Resolve (Context, Templates.Ast.Text (Item)), Output, Escape => False);
          when Templates.Ast.If_Node =>
             Resolved := Resolve (Context, Templates.Ast.Text (Item));
             if Templates.Values.Is_Truthy (Resolved) then

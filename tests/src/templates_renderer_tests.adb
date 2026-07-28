@@ -19,6 +19,8 @@ package body Templates_Renderer_Tests is
         (Suite, Caller.Create ("renderer each", Test_Each_Blocks'Access));
       AUnit.Test_Suites.Add_Test
         (Suite, Caller.Create ("renderer template copy", Test_Template_Copy'Access));
+      AUnit.Test_Suites.Add_Test
+        (Suite, Caller.Create ("renderer raw variables", Test_Raw_Variables'Access));
    end Add_Tests;
 
    function User_Context return Value is
@@ -43,7 +45,7 @@ package body Templates_Renderer_Tests is
 
    procedure Test_Variables (Item : in out Fixture) is
       pragma Unreferenced (Item);
-      Context : Value := User_Context;
+      Context : constant Value := User_Context;
    begin
       Assert (Templates.Render (Templates.Parse ("plain"), Context) = "plain", "plain");
       Assert
@@ -62,7 +64,7 @@ package body Templates_Renderer_Tests is
 
    procedure Test_If_Blocks (Item : in out Fixture) is
       pragma Unreferenced (Item);
-      Context : Value := User_Context;
+      Context : constant Value := User_Context;
    begin
       Assert (Templates.Render (Templates.Parse ("{{#if flag}}yes{{/if}}"), Context) = "yes", "if true");
       Assert (Templates.Render (Templates.Parse ("{{#if no}}yes{{/if}}"), Context) = "", "if false");
@@ -80,7 +82,7 @@ package body Templates_Renderer_Tests is
 
    procedure Test_Each_Blocks (Item : in out Fixture) is
       pragma Unreferenced (Item);
-      Context : Value := User_Context;
+      Context : constant Value := User_Context;
    begin
       Assert
         (Templates.Render (Templates.Parse ("{{#each user.roles}}<{{.}}>{{/each}}"), Context) =
@@ -106,14 +108,36 @@ package body Templates_Renderer_Tests is
 
    procedure Test_Template_Copy (Item : in out Fixture) is
       pragma Unreferenced (Item);
-      Context : Value := User_Context;
-      T_A     : Templates.Template := Templates.Parse ("{{user.email}}");
-      T_B     : Templates.Template := T_A;
+      Context : constant Value := User_Context;
+      T_A : constant Templates.Template := Templates.Parse ("{{user.email}}");
+      T_B : constant Templates.Template := T_A;
       T_C     : Templates.Template := Templates.Parse ("old");
    begin
       Assert (Templates.Render (T_B, Context) = "ada@example.test", "copy renders");
       T_C := Templates.Parse ("{{user.name}}");
       Assert (Templates.Render (T_C, Context) = "Ada &amp; Lovelace", "assignment renders");
    end Test_Template_Copy;
+
+   procedure Test_Raw_Variables (Item : in out Fixture) is
+      pragma Unreferenced (Item);
+      Context : constant Value := User_Context;
+   begin
+      --  Triple braces emit the value verbatim, without HTML escaping.
+      Assert
+        (Templates.Render (Templates.Parse ("{{{user.name}}}"), Context) =
+         "Ada & Lovelace",
+         "raw variable is not escaped");
+      --  Double braces still escape, side by side with a raw one.
+      Assert
+        (Templates.Render (Templates.Parse ("{{user.name}}|{{{user.name}}}"), Context) =
+         "Ada &amp; Lovelace|Ada & Lovelace",
+         "escaped and raw coexist");
+      Assert
+        (Templates.Render (Templates.Parse ("{{{.}}}"), String_Item ("<x>")) = "<x>",
+         "raw current value");
+      Assert
+        (Templates.Render (Templates.Parse ("{{{missing}}}"), Context) = "",
+         "raw missing renders empty");
+   end Test_Raw_Variables;
 
 end Templates_Renderer_Tests;

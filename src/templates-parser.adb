@@ -100,6 +100,28 @@ package body Templates.Parser is
       return 0;
    end Find_Close;
 
+   function Find_Triple_Close
+     (Source : String;
+      From   : Positive)
+      return Natural
+   is
+   begin
+      if From + 2 > Source'Last then
+         return 0;
+      end if;
+
+      for Position in From .. Source'Last - 2 loop
+         if Source (Position) = '}'
+           and then Source (Position + 1) = '}'
+           and then Source (Position + 2) = '}'
+         then
+            return Position;
+         end if;
+      end loop;
+
+      return 0;
+   end Find_Triple_Close;
+
    function Find_Open
      (Source : String;
       From   : Positive)
@@ -276,21 +298,48 @@ package body Templates.Parser is
 
          Tag_Line := Line;
          Tag_Column := Column;
-         Close_Pos := Find_Close (Source, Open_Pos + 2);
 
-         if Close_Pos = 0 then
-            Templates.Diagnostics.Raise_Error
-              (Tag_Line, Tag_Column, "missing }}");
+         if Open_Pos + 2 <= Source'Last and then Source (Open_Pos + 2) = '{' then
+            --  Triple brace {{{path}}}: raw, unescaped variable output.
+            declare
+               Triple_Close : constant Natural :=
+                 Find_Triple_Close (Source, Open_Pos + 3);
+            begin
+               if Triple_Close = 0 then
+                  Templates.Diagnostics.Raise_Error
+                    (Tag_Line, Tag_Column, "missing }}}");
+               end if;
+
+               Advance (Source (Open_Pos .. Open_Pos + 2), Line, Column);
+               declare
+                  Path : constant String :=
+                    Strip (Source (Open_Pos + 3 .. Triple_Close - 1));
+               begin
+                  Validate_Path_Or_Error (Path, Tag_Line, Tag_Column);
+                  Child := Templates.Ast.Create
+                    (Templates.Ast.Raw_Variable_Node, Path, Tag_Line, Tag_Column);
+                  Templates.Ast.Append_Child (Stack_Top (Stack), Child);
+               end;
+               Advance (Source (Open_Pos + 3 .. Triple_Close + 2), Line, Column);
+               Position := Triple_Close + 3;
+            end;
+         else
+            Close_Pos := Find_Close (Source, Open_Pos + 2);
+
+            if Close_Pos = 0 then
+               Templates.Diagnostics.Raise_Error
+                 (Tag_Line, Tag_Column, "missing }}");
+            end if;
+
+            Advance (Source (Open_Pos .. Open_Pos + 1), Line, Column);
+            Handle_Tag
+              (Stack,
+               Source (Open_Pos + 2 .. Close_Pos - 1),
+               Tag_Line,
+               Tag_Column);
+            Advance (Source (Open_Pos + 2 .. Close_Pos + 1), Line, Column);
+            Position := Close_Pos + 2;
          end if;
-
-         Advance (Source (Open_Pos .. Open_Pos + 1), Line, Column);
-         Handle_Tag
-           (Stack,
-            Source (Open_Pos + 2 .. Close_Pos - 1),
-            Tag_Line,
-            Tag_Column);
-         Advance (Source (Open_Pos + 2 .. Close_Pos + 1), Line, Column);
-         Position := Close_Pos + 2;
       end loop;
 
       if Stack.Length /= 1 then
