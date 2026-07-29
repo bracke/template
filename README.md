@@ -80,15 +80,25 @@ object            true
 
 ## Build
 
-```sh
-gprbuild -P templates.gpr
+This crate enforces GNAT 15 through Alire. Every active manifest pins:
+
+```toml
+[[depends-on]]
+gnat_native = "=15.2.1"
 ```
 
-With Alire:
+Do not run plain system GNAT, GPRBuild, GNATprove, GNATdoc, or related `gnat*`
+tools from `PATH`. Build, test, and inspect the compiler through Alire so the
+pinned toolchain is selected:
 
 ```sh
+alr exec -- gnatls --version
 alr build
 ```
+
+The compiler version command must report `GNATLS 15.x`. The release checklist
+verifies the exact `gnat_native = "=15.2.1"` dependency in the root, tests,
+examples, and tools manifests.
 
 ## Test
 

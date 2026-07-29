@@ -9,6 +9,7 @@ Build tools:
 
 ```sh
 cd tools
+alr exec -- gnatls --version
 alr build
 ```
 

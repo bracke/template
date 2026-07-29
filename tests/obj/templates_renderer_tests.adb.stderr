@@ -1,6 +1,0 @@
-templates_renderer_tests.adb:46:07: warning: "Context" is not modified, could be declared constant [-gnatwk]
-templates_renderer_tests.adb:65:07: warning: "Context" is not modified, could be declared constant [-gnatwk]
-templates_renderer_tests.adb:83:07: warning: "Context" is not modified, could be declared constant [-gnatwk]
-templates_renderer_tests.adb:109:07: warning: "Context" is not modified, could be declared constant [-gnatwk]
-templates_renderer_tests.adb:110:07: warning: "T_A" is not modified, could be declared constant [-gnatwk]
-templates_renderer_tests.adb:111:07: warning: "T_B" is not modified, could be declared constant [-gnatwk]

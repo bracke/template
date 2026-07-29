@@ -218,8 +218,6 @@ begin
 
    Project_Tools.Processes.Require_Command
      ("alr", "alr is required to run the templates release checklist");
-   Project_Tools.Processes.Require_Command
-     ("gprbuild", "gprbuild is required to run the templates release checklist");
 
    Require_File ("alire.toml");
    Require_File ("templates.gpr");
@@ -239,6 +237,10 @@ begin
    Require_Text ("docs/testing.md", "./tests/bin/tests");
    Require_Text ("tools/alire.toml", "project_tools");
    Require_Text ("tools/alire.toml", "../../project_tools");
+   Require_Text ("alire.toml", "gnat_native = ""=15.2.1""");
+   Require_Text ("tests/alire.toml", "gnat_native = ""=15.2.1""");
+   Require_Text ("examples/alire.toml", "gnat_native = ""=15.2.1""");
+   Require_Text ("tools/alire.toml", "gnat_native = ""=15.2.1""");
 
    Project_Tools.Alire_Manifests.Validation.Require_Pin_Free_Crate_Manifest
      (Root & "/alire.toml", "templates");

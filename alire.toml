@@ -13,4 +13,10 @@ tags = ["templates", "html", "server", "handlebars"]
 project-files = ["templates.gpr"]
 
 [[depends-on]]
-aunit = "*"
+gnat_native = "=15.2.1"
+
+# Build dependencies in the development profile (-Og) too, not the default
+# release (-O3), so roots that share these crates share object files rather
+# than forcing each other into full rebuilds.
+[build-profiles]
+"*" = "development"

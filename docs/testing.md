@@ -5,6 +5,7 @@ The tests are an AUnit crate in `tests/`.
 Build and run from the repository root:
 
 ```sh
+alr exec -- gnatls --version
 alr exec -- gprbuild -P tests/templates_tests.gpr
 ./tests/bin/tests
 ```

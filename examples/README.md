@@ -5,6 +5,7 @@ This directory is an Alire crate with runnable examples for `templates`.
 Build all examples from the repository root:
 
 ```sh
+alr exec -- gnatls --version
 alr exec -- gprbuild -P examples/templates_examples.gpr
 ```
 

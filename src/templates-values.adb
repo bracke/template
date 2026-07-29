@@ -48,7 +48,7 @@ package body Templates.Values is
                Ref_Count => 1,
                Flag      => Ptr.Flag);
          when Object_Value =>
-            return Result : Value_Data_Access := new Value_Data'
+            return Result : constant Value_Data_Access := new Value_Data'
               (Kind      => Object_Value,
                Ref_Count => 1,
                Fields    => Field_Vectors.Empty_Vector)
@@ -58,7 +58,7 @@ package body Templates.Values is
                end loop;
             end return;
          when List_Value =>
-            return Result : Value_Data_Access := new Value_Data'
+            return Result : constant Value_Data_Access := new Value_Data'
               (Kind      => List_Value,
                Ref_Count => 1,
                Items     => Value_Vectors.Empty_Vector)

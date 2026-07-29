@@ -34,7 +34,8 @@ package body Templates_Public_Tests is
       T : Templates.Template;
    begin
       T := Templates.Parse ("{{#if ok}}");
-      Assert (False, "malformed template did not raise");
+      Assert (False,
+              "malformed template did not raise; rendered: " & Templates.Render (T, Object));
    exception
       when Templates.Template_Error =>
          null;
