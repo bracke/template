@@ -8,6 +8,7 @@ maintainers-logins = ["bbracke"]
 
 licenses = "MIT OR Apache-2.0"
 website = "https://github.com/bracke/template.git"
+long-description = "templates is a small Ada 2022, dependency-light, server-side HTML template engine. It supports a deliberately small Handlebars-like block syntax for variables, conditionals, and loops."
 tags = ["templates", "html", "server", "handlebars"]
 
 project-files = ["templates.gpr"]
